@@ -9,4 +9,7 @@
  - 
 ### Informe de Trabajo
 
- + 
+ + Se instaló Pycharm (con licencia estudiantil ) como editor de python.
+ 	- https://www.jetbrains.com/pycharm/download/#section=windows
+ + Se intaló git en windows para control de versiones.
+ 	- https://git-scm.com/download/win
