@@ -16,5 +16,6 @@
  + Se intaló git en windows para control de versiones.
  	- https://git-scm.com/download/win
  + Se instaló python 2.7.14
+    - https://www.python.org/downloads/release/python-2714/
  + Se clonó el repositorio de Roxana
 
