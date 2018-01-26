@@ -58,4 +58,18 @@
  + se realizo la instación con exito.
  + Finalmente se comenzo generar un archivo .bat el cual realizará la instalación de manera más facil para un usuario no experto.
 
+  # Fecha: 26 de enero del 2018
+
+### Requerimientos:
+
+ - Terminar el instalador de ResearchLogger para windows.
+ 
+### Informe de Trabajo
+ 
+ + Se genero el script ResearchLoggerInstaler.bat
+ + En el primer segmento de el script se birnda ayuda para instalar los programas que se ocupan para que se ejecute el research logger
+ + En la parte final del script se copian los archivos necesarios para que funcione el research logger
+ + Finalmente se ubica la carpeta ResearchLogger en el directorio raíz:
+    - C:\
+ 
      
