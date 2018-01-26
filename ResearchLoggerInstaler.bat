@@ -57,7 +57,14 @@ set "pathDestination=%pythonPath%%libDestination%"
 
 copy  %pathOrigin% %pathDestination%
 
-echo Files copied, installation completed!!
+echo Files copied
+
+echo Installing validate
+
+pip install validate
+
+echo Validate installed, Instalation finished!!!
+
 
 pause
 exit
