@@ -4,7 +4,7 @@ echo Welcome to ResearchLogger Instalation
 echo Installing dependencies
 
 echo Installing python
-start .\python-2.7.14.msi
+start python-2.7.14.msi
 echo If Python installation is finished
 pause
 
@@ -19,7 +19,7 @@ echo If PIL installation is finished
 pause
 
 echo Installing pyHook
-start pyHook-1.5.1.win32-py2.7
+start pyHook-1.5.1.win32-py2.7.exe
 echo If pyHook installation is finished
 pause
 
