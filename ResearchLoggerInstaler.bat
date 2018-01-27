@@ -4,9 +4,9 @@ echo Welcome to ResearchLogger Instalation
 echo Installing dependencies
 
 echo Installing python
-start python-2.7.14.msi
+START /WAIT python-2.7.14.msi
 echo If Python installation is finished
-pause
+
 
 echo Installing pygtk
 start pygtk-all-in-one-2.24.0.win32-py2.7.msi
@@ -59,11 +59,21 @@ copy  %pathOrigin% %pathDestination%
 
 echo Files copied
 
+echo Creating Environment Variables
+
+setx -m PYTHON_HOME %pythonPath%
+
+set "scripts=\Scripts\"
+set "pathScripts=%pythonPath%%scripts%"
+
+setx -m Path %path%;%pythonPath%;%pathScripts%
+
 echo Installing validate
 
 pip install validate
 
-echo Validate installed, Instalation finished!!!
+echo Validate installed
+Echo Instalation finished!!!
 
 
 pause
