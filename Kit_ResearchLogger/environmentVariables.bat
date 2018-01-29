@@ -41,6 +41,5 @@ set "pathScripts=%pythonPath%%scripts%"
 
 setx -m Path %path%;%pythonPath%;%pathScripts%
 
-pause
 start validate.bat
 exit
