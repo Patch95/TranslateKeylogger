@@ -7,31 +7,25 @@ echo Installing python
 START /WAIT python-2.7.14.msi
 echo If Python installation is finished
 
-
 echo Installing pygtk
-start pygtk-all-in-one-2.24.0.win32-py2.7.msi
+start /WAIT pygtk-all-in-one-2.24.0.win32-py2.7.msi
 echo If pygtk installation is finished
-pause
 
 echo Installing PIL
-start PIL-1.1.7.win32-py2.7.exe
+start /WAIT PIL-1.1.7.win32-py2.7.exe
 echo If PIL installation is finished
-pause
 
 echo Installing pyHook
-start pyHook-1.5.1.win32-py2.7.exe
+start /WAIT pyHook-1.5.1.win32-py2.7.exe
 echo If pyHook installation is finished
-pause
 
 echo Installing pywin32
-start pywin32-219.win32-py2.7.exe
+start /WAIT pywin32-219.win32-py2.7.exe
 echo If pywing installation is finished
-pause
 
 echo Installing configobjg
-start configobj-4.7.2\setup.py
+start /WAIT configobj-4.7.2\setup.py
 echo If configobj installation is finished
-pause
 
 echo Dependencies installed
 
@@ -59,22 +53,15 @@ copy  %pathOrigin% %pathDestination%
 
 echo Files copied
 
-echo Creating Environment Variables
-
-setx -m PYTHON_HOME %pythonPath%
-
-set "scripts=\Scripts\"
-set "pathScripts=%pythonPath%%scripts%"
-
-setx -m Path %path%;%pythonPath%;%pathScripts%
+start environmentVariables.bat
+pause
 
 echo Installing validate
 
 pip install validate
 
 echo Validate installed
+
 Echo Instalation finished!!!
-
-
 pause
 exit
