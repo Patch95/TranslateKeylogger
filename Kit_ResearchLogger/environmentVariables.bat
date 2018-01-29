@@ -36,7 +36,11 @@ set "pythonPath=%HeadPath%%python%"
 
 setx -m PYTHON_HOME %pythonPath%
 
-set "scripts=\Scripts\"
+set "scripts=Scripts\"
 set "pathScripts=%pythonPath%%scripts%"
 
 setx -m Path %path%;%pythonPath%;%pathScripts%
+
+pause
+start validate.bat
+exit
