@@ -41,10 +41,6 @@ set "pathScripts=%pythonPath%%scripts%"
 
 setx -m Path %path%;%pythonPath%;%pathScripts%
 
-echo Installing validate
-
-pip install validate
-
-echo Validate installed
-
+pause
+start validate.bat
 exit
