@@ -71,6 +71,14 @@
  + En la parte final del script se copian los archivos necesarios para que funcione el research logger
  + Finalmente se ubica la carpeta ResearchLogger en el directorio raíz:
     - C:\
+ + Links de apoyo:
+    - https://github.com/Southpaw-TACTIC/Team/tree/master/src/python/Lib/site-packages/pywin32_system32
+    - https://es.osdn.net/projects/sfnet_ascend-sim/downloads/thirdparty/py2cairo-1.10.0.win-amd64-py2.7.exe/
+    - http://www.pythonware.com/products/pil/
+    - https://github.com/fuzeman/Catalytic/blob/master/dependencies/win32/pygtk-all-in-one-2.24.0.win32-py2.7.msi
+    - https://sourceforge.net/projects/pyhook/files/pyhook/1.5.1/
+    - https://sourceforge.net/projects/pywin32/files/pywin32/Build%20219/
+    
  
  # Fecha 28 de enero del 2018
  
@@ -81,4 +89,9 @@
  ### Informa de Trabajo 
  + Ingresar las variables de ambiente "C:\Python27" y "C:\Python27\Scripts\" requiere permisos de administrador, pero si se inicia el script con dichos permisos el directorio de ejecución cambia a C:\windows\system32,por lo que no es posible ubicar los ejecutables a llamar.
  + Se optó por realizar dos scripts, esto para que ambos puedan ser ejecutados sin permisos de administrador
- 
+ + Links de apoyo:
+    - https://stackoverflow.com/questions/1894967/how-to-request-administrator-access-inside-a-batch-file
+    - https://www.windows-commandline.com/set-path-command-line/
+    - https://stackoverflow.com/questions/3803581/setting-a-system-environment-variable-from-a-windows-batch-file
+    - https://www.dostips.com/DtTipsStringManipulation.php
+    
