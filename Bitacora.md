@@ -26,7 +26,7 @@
     - gtk [sudo apt-get install python-gtk2]
   + Se instaló pip
  
- # Fecha: 25 de enero del 2018
+# Fecha: 25 de enero del 2018
 
 ### Requerimientos:
 
@@ -58,7 +58,7 @@
  + se realizo la instación con exito.
  + Finalmente se comenzo generar un archivo .bat el cual realizará la instalación de manera más facil para un usuario no experto.
 
-  # Fecha: 26 de enero del 2018
+# Fecha: 26 de enero del 2018
 
 ### Requerimientos:
 
@@ -72,4 +72,13 @@
  + Finalmente se ubica la carpeta ResearchLogger en el directorio raíz:
     - C:\
  
-     
+ # Fecha 28 de enero del 2018
+ 
+ ### Requerimientos:
+ 
+ - Solucuionar el problema de las variables de ambiente.
+ 
+ ### Informa de Trabajo 
+ + Ingresar las variables de ambiente "C:\Python27" y "C:\Python27\Scripts\" requiere permisos de administrador, pero si se inicia el script con dichos permisos el directorio de ejecución cambia a C:\windows\system32,por lo que no es posible ubicar los ejecutables a llamar.
+ + Se optó por realizar dos scripts, esto para que ambos puedan ser ejecutados sin permisos de administrador
+ 
