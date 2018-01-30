@@ -95,3 +95,19 @@
     - https://stackoverflow.com/questions/3803581/setting-a-system-environment-variable-from-a-windows-batch-file
     - https://www.dostips.com/DtTipsStringManipulation.php
     
+ # Fecha 29 de enero del 2018
+ 
+ ### Requerimientos:
+ 
+ - Depuración de instalador
+ - Pruebas de instalador
+ 
+ ### Informa de Trabajo 
+ 
+ + Finalmente se optó por realizar 3 scripts:
+    1. ResearchLoggerInstaller: este se encarga de llamar a los diferentes intaladores que son necesarios para que el researchlogger funcione correctamente.
+    2. EnvironmentVariables: este se encarga de escribir las variables de entorno necesarias para qur python sea accesible desde terminal y para que se pueda hacer uso del comando pip que se necesita para el ultimo script.
+    3. validate: Este script se encarga de instalar la biblioteca validate de python.
+    
+ + Se asigno la lecura ApuntesPaula para investigación, se comenzó a leer y a comprender durante el día.
+ 
