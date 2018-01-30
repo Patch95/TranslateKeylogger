@@ -108,6 +108,6 @@
     1. ResearchLoggerInstaller: este se encarga de llamar a los diferentes intaladores que son necesarios para que el researchlogger funcione correctamente.
     2. EnvironmentVariables: este se encarga de escribir las variables de entorno necesarias para qur python sea accesible desde terminal y para que se pueda hacer uso del comando pip que se necesita para el ultimo script.
     3. validate: Este script se encarga de instalar la biblioteca validate de python.
-    
+ + Se realizó el README de instalación, se especifica que script deben ser ejecutados y de que forma.
  + Se asigno la lecura ApuntesPaula para investigación, se comenzó a leer y a comprender durante el día.
  
