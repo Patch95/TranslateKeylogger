@@ -98,7 +98,7 @@
  # Fecha 29 de enero del 2018
  
  ### Requerimientos:
- 
+  
  - Depuración de instalador
  - Pruebas de instalador
  
@@ -111,3 +111,20 @@
  + Se realizó el README de instalación, se especifica que script deben ser ejecutados y de que forma.
  + Se asigno la lecura ApuntesPaula para investigación, se comenzó a leer y a comprender durante el día.
  
+ 
+ # Fecha 29 de enero del 2018
+ 
+ ### Requerimientos:
+  
+ - Pruebas de instalador
+ - Lectura de folleto ApuntesPaula
+ - Lectura de Tesis de Keylogging para el estudio de los procesos cognitivos del traductor, Rozana Anabel Lafuente
+ -
+ 
+ ### Informa de Trabajo 
+ 
+ + Se utilizaron dos sujetos de prueba para testear el script de instalación, Jose Roerto Argueddas y Randall Araya Campos.
+    - El primer sujeto de prueba completo el tutorial de instalación con exito, como retroalimentación sugerió realizar dos instaladores 1 con detalles tecnicos (el que actualmente existe) y otro que tenga screenshots y mas detalles de la instalación.
+    - El segundo sujeto de prueba selecciono la opción de reinicio por error, en caso de que esto suceda el script puede correrse nuevamente solo que la instalación de python debe cancelarse la segunda vez que se ejecuta ya que este ya estaria instalado.
+ + Se leyó el folleto ApuntesPaula y se generaron dudas que deben ser consultadas con paula
+ + Se leyó la Tesis de Keylogging para el estudio de los procesos cognitivos del traductor, Rozana Anabel Lafuente, se hizo apuntes de la lectura y también se generaron dudas.
