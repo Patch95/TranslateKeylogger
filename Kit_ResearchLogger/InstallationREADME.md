@@ -6,7 +6,7 @@ Important, for your installation to finish correctly:
 
 You must install the dependencies and the "validate" plugin in order for the ResearchLogger to work correctly, the steps for both installations are shown below.
 
-To instalate Research Logger please follow the next steps.
+### To instalate Research Logger please follow the next steps.
 
 1. Open “ResearchLoggerInstaller.bat”, **DO NOT OPENED WITH ADMINISTRATOR PERMITS**, the program will ask for administrador permits.
 
@@ -18,10 +18,14 @@ To instalate Research Logger please follow the next steps.
 
 5. Finally if there is any terminal window open close it.
 
-To instalate validate complement follow the next steps:
+### To instalate validate complement follow the next steps:
 
 1. Open "validation.bat" and wait until the "validate" plugin is installed.
 
 2. Press Enter to exit window.
 
-Finalmente si desea ejecutar el research logger Dirijase a la carpeta C:\ResearchLogger y doble click en ResearchLogger.py
+### Run ResearchLogger
+
+Finally, if you want to run the research logger without an interface, go to the folder C:\ResearchLogger and double click on ResearchLogger.py
+
+Or you can execute the interface by double clicking on ResearchLoggerInterface.py and then double clicking on ResearchLogger.py
