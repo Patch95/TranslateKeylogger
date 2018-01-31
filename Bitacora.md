@@ -112,7 +112,7 @@
  + Se asigno la lecura ApuntesPaula para investigación, se comenzó a leer y a comprender durante el día.
  
  
- # Fecha 29 de enero del 2018
+ # Fecha 30 de enero del 2018
  
  ### Requerimientos:
   
