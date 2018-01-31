@@ -23,3 +23,5 @@ To instalate validate complement follow the next steps:
 1. Open "validation.bat" and wait until the "validate" plugin is installed.
 
 2. Press Enter to exit window.
+
+Finalmente si desea ejecutar el research logger Dirijase a la carpeta C:\ResearchLogger y doble click en ResearchLogger.py
