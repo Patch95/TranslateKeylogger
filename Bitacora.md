@@ -128,3 +128,25 @@
     - El segundo sujeto de prueba selecciono la opción de reinicio por error, en caso de que esto suceda el script puede correrse nuevamente solo que la instalación de python debe cancelarse la segunda vez que se ejecuta ya que este ya estaria instalado.
  + Se leyó el folleto ApuntesPaula y se generaron dudas que deben ser consultadas con paula
  + Se leyó la Tesis de Keylogging para el estudio de los procesos cognitivos del traductor, Rozana Anabel Lafuente, se hizo apuntes de la lectura y también se generaron dudas.
+ 
+# Fecha 30 de enero del 2018
+ 
+ ### Requerimientos:
+  
+ - Reunión con usuario no experto para instalación de researchlogger
+ 
+ ### Informa de Trabajo 
+ 
+ + Se tuvo una reunión con una señorita que se encuentra en España, reunión virtual, en la cual se testeo el script de instalación para windows.
+ + Durante la instalación hubo un error con las variables de entorno, que se solucionó por medio de teamviewer.
+ + Finalmente se asigno la revision del folleto ApuntesPaula contra la estructura de los logs.
+ 
+ # Fecha 31 de enero del 2018
+ 
+ ### Requerimientos:
+  
+ - No aplica
+ 
+ ### Informa de Trabajo 
+ 
+ + No se trabajó por motivos de enfermedad.
