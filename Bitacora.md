@@ -129,7 +129,7 @@
  + Se leyó el folleto ApuntesPaula y se generaron dudas que deben ser consultadas con paula
  + Se leyó la Tesis de Keylogging para el estudio de los procesos cognitivos del traductor, Rozana Anabel Lafuente, se hizo apuntes de la lectura y también se generaron dudas.
  
-# Fecha 30 de enero del 2018
+# Fecha 31 de enero del 2018
  
  ### Requerimientos:
   
@@ -141,7 +141,7 @@
  + Durante la instalación hubo un error con las variables de entorno, que se solucionó por medio de teamviewer.
  + Finalmente se asigno la revision del folleto ApuntesPaula contra la estructura de los logs.
  
- # Fecha 31 de enero del 2018
+ # Fecha 01 de enero del 2018
  
  ### Requerimientos:
   
