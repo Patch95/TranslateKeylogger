@@ -150,3 +150,26 @@
  ### Informa de Trabajo 
  
  + No se trabajó por motivos de enfermedad.
+ 
+ # Fecha 02 de enero del 2018
+ 
+ ### Requerimientos:
+  
+ - Reunión en FaMAF
+ 
+ ### Informa de Trabajo 
+ 
+ + Se llevó a cabo la priera reunion en conjunto con Paula Estrella, Aurelio Sanabria y María Estrada.
+ 
+ # Fecha 03 de enero del 2018
+ 
+ ### Requerimientos:
+  
+ - Realizar documento de factibilidad de transformación de los logs de ResearchLogger
+ 
+ ### Informa de Trabajo 
+ 
+ + Se realizó el documento
+ + Se acordó generar consultas para ricardo
+ + Se asigno la tarea de comenzar a generar una pequeña visualización del log de clicks y de teclas mezclados.
+ 
