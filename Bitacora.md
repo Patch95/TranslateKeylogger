@@ -161,7 +161,7 @@
  
  + Se llevó a cabo la priera reunion en conjunto con Paula Estrella, Aurelio Sanabria y María Estrada.
  
- # Fecha 03 de enero del 2018
+ # Fecha 05 de enero del 2018
  
  ### Requerimientos:
   
@@ -172,4 +172,22 @@
  + Se realizó el documento
  + Se acordó generar consultas para ricardo
  + Se asigno la tarea de comenzar a generar una pequeña visualización del log de clicks y de teclas mezclados.
+ 
+ # Fecha 06 de enero del 2018
+ 
+ ### Requerimientos:
+  
+ - Realizar consultas para Ricardo
+ - Realizar pruebas de script de Jose Roberto Arguedas en windows
+ - Realizar Chequeo de anteproyecto
+ 
+ ### Informa de Trabajo 
+ 
+ + En conjunto con Jose Roberto Arguedas se testeo el script de manejo de clicks y de toma de imagenes.
+    + Se realizó una máquina virtual de windows 10
+    + Se instaló el research logger con la ayuda del KitResearchLogger anteriormente creado
+    + Se instalaron las bibliotecas necesarias
+    + Se cedió el uso de mi computadora a Jose Roberto Arguedas para que este pudieraa realizar los test necesarios.
+ + Para que haya un entendimiento más adecuado para Ricardo se instaló microsoft office 2013 para generar las consultas de mejor manera.
+ + Se revisaron los documento de anteproyecto necesarios para el Tecnológico de Costa Rica.
  
