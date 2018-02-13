@@ -191,3 +191,25 @@
  + Para que haya un entendimiento más adecuado para Ricardo se instaló microsoft office 2013 para generar las consultas de mejor manera.
  + Se revisaron los documento de anteproyecto necesarios para el Tecnológico de Costa Rica.
  
+ # Fecha 07 de enero del 2018
+ 
+ ### Requerimientos:
+  
+ - Realizar consultas para Ricardo
+ - Clonar repositorio de Roxana Lafuente ResearchAnalyser
+ - Probar mixed_parse.py de ResearchAnalyser
+ 
+ ### Informa de Trabajo 
+ 
+ + Se realizarón las consultas en el documento de ricardo a manera de comentarios en word.
+ + Se clonó el repositorio
+ + Se necesito instalar las siguiente dependencias:
+    + termcolor [sudo apt-get install python-termcolor]
+    + matplotlib
+    + colour [pip install colour]
+    + Python Image Library (PIL) [sudo apt-get install python-pil]
+    + nltk [sudo pip install nltk]
+ + Se probó el mixed_parser:
+    + No es funcional con los logs de windows, error aún no encontrado.
+  
+ 
