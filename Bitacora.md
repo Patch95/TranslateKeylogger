@@ -212,4 +212,20 @@
  + Se probó el mixed_parser:
     + No es funcional con los logs de windows, error aún no encontrado.
   
+ # Fecha 08 de enero del 2018
+ 
+ ### Requerimientos:
+  
+ - Chequear error de mixed_parser.py
+ - Revisión de logs
+ 
+ ### Informa de Trabajo 
+ 
+ + Se chequeó el error generado por el mixed_parser:
+    + Se concluye que, en el log, la falta de X,Y del mouse cuando se presiona una tecla es la causa de el fallo, ya que los separadores para comprender la información generar mal los datos si estos datos no estan.
+    + Se compararón los log de windows y de ubuntu:
+        + Los logs de ubuntu no generan el nombre de las pestañas de los navegadores.
+    + Se descargo e instaló windows 7 en una maquina virtual esto para realizar pruebas con el researchlogger y ver si NO genera X,Y coomo en windows 10
+        + Se concluye que en windows 10 y 7 no se generan los x,y
+        
  
