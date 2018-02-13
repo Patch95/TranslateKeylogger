@@ -228,4 +228,19 @@
     + Se descargo e instaló windows 7 en una maquina virtual esto para realizar pruebas con el researchlogger y ver si NO genera X,Y coomo en windows 10
         + Se concluye que en windows 10 y 7 no se generan los x,y
         
+ # Fecha 09 de enero del 2018
+ 
+ ### Requerimientos:
+  
+ - Reunión semanal con Aurelio Sanabria y María Estrada
+ 
+ ### Informa de Trabajo 
+ 
+ + La reunión con Aurelio y Maria Estrada no se llevó acábo, por lo cual solo se tuvo una reunión con Paula Estrella
+ + En la reunion se acordo lo siguiente:
+    + Los logs serán visualizados en un dashboard, se necesita definir que datos pueden generarse y como se puede mostrar la información
+    + Se necesita corregir el mixed_parser ya que es necesario trabajar con logs de windows, se sugiere que no se pidan las variables x,y una vez que se carguen los logs.
+ + Se intentó NO solicitar las variables x,y pero el script aún falla, realizando más investigación, se concluyó que los logs en windows se generan también con el siguiente error:
+    + "key_down" y "key_up" no tiene la raya baja "_" por lo cual aparecen de la siguiente forma "key down" "key up"
+ + Debido a todos estos problemas se optará por realizar un script en python que revise la estructura de los logs generados y que haga correciones si es necesario.
  
