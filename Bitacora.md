@@ -322,6 +322,42 @@
  - A partir de varias pruebas que se ejecutaron con loginfo se concluye lo siguiente:
     - se necesita comprender de mejor manera la estructura de el ResearchAnalyzer, por lo que se realizó la lectura de la tesis de roxana reyes de la página 25 a la página 29
  - Se identifica que el script loginfo.py hace uso de otros scripts entre ellos click_parse.py el script que lanzaba el error, se concluye que la falta de x,y en los logs de detailed_log genera eel problema, se agrega -1 -1 como x,y en el log generado en windows esto para verificar si es posible que el codigo se ejecute.
- - Aun debe depurarse el código ya que este aún no se ejecuta.
+ - Aun debe depurarse los logs ya que aún no se ejecuta el script.
  
+ # Fecha 19 de Febrero del 2018
  
+ ### Requerimientos:
+  
+ - Verificar nuevo error encontrado en click_parser.py
+  
+ ### Informa de Trabajo
+ - Se creo el script windows_logs_test.py para pruebas de desarrollo:
+    - Este script intenta inicializar una instancia de loginfo como en ejemplo de main_example1.py de ResearchAnalizer, aun genera un error.
+    - En cuestiones de diseño es necesario que solo colocando las diferentes carpetas generadas por el research logger en un directorio se genere un informe por cada carpeta, por lo cual e creó la función load_loginfo, esta funcion realiza lo siguiente:
+        - Revisa la carpeta logs_to_treat y con el scrpitchecker genera para cada registro de logs los nuevos archivos de logs para cada carpeta.
+        - inicializa la instancia de loginfo para cada registro de log.
+ - A partir de varias pruebas que se ejecutaron se concluye lo siguiente:
+    - ResearchLogger genera los nombres de las imagenes a partir del nombre de la ventana activa, en windows los nombres que se les dan a las ventanas son la dirección del directorio en el cual se esta ejecutando el programa, dicha dirección puede contener espacios en el nombre como por ejemplo c:\ejemplo uno\programa.exe, esto hace que a la hora de llamarse haya proble con los separadores ya que uno de ellos en un espacio.
+    - Se necesita revisar que los nombres de las imagenes en el log no contengan espacio por lo cual se optó por lo siguiente:
+        - Contar los | que se encuentran en el log
+        - Contar las , que se encuentren en el log
+        - cuando se tenga 4 comas se verifica que el valor siguiente no contenga cespacios entre el identificador "," y .png
+        - Se inició la implementaacíon de código en la funcióon arranger en scriptchecker.py aun es necesario depurar.
+ 
+ # Fecha 20 de Febrero del 2018
+ 
+ ### Requerimientos:
+  
+ - Terminar función arranger para modificación de logs
+ - Ejecutar el script windows_logs_test
+  
+ ### Informa de Trabajo
+ 
+ - Actualmente se cuenta con el script windows_logs_test.py, este hace uso de los script scriptchecker.py y loginfo.py
+ - Se generó un algoritmo en la funcion aranger con el cual se corrige el problema de los espacios encontrados en el nombre de las imagenes, esto en los logs de los clicks.
+ - Se inicializó con exito la instancia de loginfo una vez que se corrigio el problema.
+ - Se intentó obtener el tiempo total de la sesion, este hace uso de el script phaseinfo.py, se genero aun error ya que se descubrio que a logs les hace falta un identifacador "Abrir"
+ - Teniendo ya el algoritmo de remplazo en la funcion arranger fue mas facil agregar el identificador "Abrir" a los logs, echo esto se descubrio que no se conoce cual es el archivo finale necesario para poder crear la instancia de phaseinfo.
+ - Se forsó crear la instancia de phaseinfo pero se genero un error en la linea 53 del script phaseinfo.py aun se comprende dicho error.
+ - Se terminó de simular con exito el main_example1.py con los logs de windows con excepción de los graficos la información si se puede obtener.
+ - Se inicio con las pruebas en python para crear un archivo excell.
