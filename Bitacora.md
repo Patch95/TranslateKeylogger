@@ -343,6 +343,7 @@
         - Contar las , que se encuentren en el log
         - cuando se tenga 4 comas se verifica que el valor siguiente no contenga cespacios entre el identificador "," y .png
         - Se inició la implementaacíon de código en la funcióon arranger en scriptchecker.py aun es necesario depurar.
+ - Se generó el pdf Validate_manual, el cual se lee envió a Mario, el cual contiene como corregir el problema de la falta de la biblioteca validate.py para ejecutar el ResearchLogger
  
  # Fecha 20 de Febrero del 2018
  
