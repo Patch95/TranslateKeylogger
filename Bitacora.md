@@ -310,4 +310,18 @@
  + Se ejecutó con exito main_example1.py
  + Se intentó ejecutar el script main_example1.py con los logs generados por windows, el resultado fueron diferentes errores que deben ser investigados.
  
+ # Fecha 16 de Febrero del 2018
+ 
+ ### Requerimientos:
+  
+ - Ejecutar loginfo.py con los script de prueba en windows
+  
+ ### Informa de Trabajo 
+ 
+ - Se necesita averiguar por que el codigo al ejecutarse con los logs de windows falla durante la ejecución
+ - A partir de varias pruebas que se ejecutaron con loginfo se concluye lo siguiente:
+    - se necesita comprender de mejor manera la estructura de el ResearchAnalyzer, por lo que se realizó la lectura de la tesis de roxana reyes de la página 25 a la página 29
+ - Se identifica que el script loginfo.py hace uso de otros scripts entre ellos click_parse.py el script que lanzaba el error, se concluye que la falta de x,y en los logs de detailed_log genera eel problema, se agrega -1 -1 como x,y en el log generado en windows esto para verificar si es posible que el codigo se ejecute.
+ - Aun debe depurarse el código ya que este aún no se ejecuta.
+ 
  
