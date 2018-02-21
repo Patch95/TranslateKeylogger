@@ -1,0 +1,651 @@
+2018-02-09 13:49:19,967 root                      DEBUG      ResearchLogger.py         112   spawn_event_threads ['General', 'Detailed Log Writer', 'Click Image Capture', 'Timed Screenshot Capture']
+2018-02-09 13:49:19,969 Detailed Log Writer       DEBUG      baseeventclasses.py       173   spawn_timer_threads Creating thread E-mail
+2018-02-09 13:49:19,970 Detailed Log Writer       DEBUG      baseeventclasses.py       173   spawn_timer_threads Creating thread Zip
+2018-02-09 13:49:19,970 Detailed Log Writer       DEBUG      baseeventclasses.py       173   spawn_timer_threads Creating thread FTP
+2018-02-09 13:49:19,970 Detailed Log Writer       DEBUG      baseeventclasses.py       173   spawn_timer_threads Creating thread Old Log Deletion
+2018-02-09 13:49:19,970 Detailed Log Writer       DEBUG      baseeventclasses.py       173   spawn_timer_threads Creating thread Log Flush
+2018-02-09 13:49:19,970 Detailed Log Writer       DEBUG      baseeventclasses.py       173   spawn_timer_threads Creating thread Log Rotation
+2018-02-09 13:49:19,974 Click Image Capture       DEBUG      baseeventclasses.py       173   spawn_timer_threads Creating thread E-mail
+2018-02-09 13:49:19,974 Click Image Capture       DEBUG      baseeventclasses.py       173   spawn_timer_threads Creating thread Zip
+2018-02-09 13:49:19,974 Click Image Capture       DEBUG      baseeventclasses.py       173   spawn_timer_threads Creating thread FTP
+2018-02-09 13:49:19,974 Click Image Capture       DEBUG      baseeventclasses.py       173   spawn_timer_threads Creating thread Old Log Deletion
+2018-02-09 13:49:19,976 Click Image Capture       DEBUG      baseeventclasses.py       173   spawn_timer_threads Creating thread Log Flush
+2018-02-09 13:49:19,976 Click Image Capture       DEBUG      baseeventclasses.py       173   spawn_timer_threads Creating thread Log Rotation
+2018-02-09 13:49:19,977 Timed Screenshot Capture  DEBUG      baseeventclasses.py       173   spawn_timer_threads Creating thread E-mail
+2018-02-09 13:49:19,977 Timed Screenshot Capture  DEBUG      baseeventclasses.py       173   spawn_timer_threads Creating thread Zip
+2018-02-09 13:49:19,977 Timed Screenshot Capture  DEBUG      baseeventclasses.py       173   spawn_timer_threads Creating thread FTP
+2018-02-09 13:49:19,979 Timed Screenshot Capture  DEBUG      baseeventclasses.py       173   spawn_timer_threads Creating thread Old Log Deletion
+2018-02-09 13:49:19,979 Timed Screenshot Capture  DEBUG      baseeventclasses.py       173   spawn_timer_threads Creating thread Log Flush
+2018-02-09 13:49:19,980 Timed Screenshot Capture  DEBUG      baseeventclasses.py       173   spawn_timer_threads Creating thread Log Rotation
+2018-02-09 13:49:19,980 root                      DEBUG      ResearchLogger.py         132   start Starting thread Detailed Log Writer: <DetailedLogWriterFirstStage(Thread-1, initial)>
+2018-02-09 13:49:19,980 root                      DEBUG      ResearchLogger.py         132   start Starting thread Timed Screenshot Capture: <TimedScreenshotFirstStage(Thread-17, initial)>
+2018-02-09 13:49:19,980 Detailed Log Writer       DEBUG      baseeventclasses.py       196   run Not starting thread FTP: <FTPLogUploader(Thread-4, initial)>
+2018-02-09 13:49:19,982 root                      DEBUG      ResearchLogger.py         132   start Starting thread Click Image Capture: <OnClickImageCaptureFirstStage(Thread-9, initial)>
+2018-02-09 13:49:19,982 Timed Screenshot Capture  DEBUG      baseeventclasses.py       191   run Starting thread FTP: <FTPLogUploader(Thread-20, initial)>
+2018-02-09 13:49:19,982 Detailed Log Writer       DEBUG      baseeventclasses.py       196   run Not starting thread Zip: <LogZipper(Thread-3, initial)>
+2018-02-09 13:49:19,983 Detailed Log Writer       DEBUG      baseeventclasses.py       191   run Starting thread Log Flush: <LogFlusher(Thread-6, initial)>
+2018-02-09 13:49:19,983 Click Image Capture       DEBUG      baseeventclasses.py       191   run Starting thread FTP: <FTPLogUploader(Thread-12, initial)>
+2018-02-09 13:49:19,983 Timed Screenshot Capture  DEBUG      baseeventclasses.py       196   run Not starting thread Zip: <LogZipper(Thread-19, initial)>
+2018-02-09 13:49:19,983 Timed Screenshot Capture  DEBUG      baseeventclasses.py       191   run Starting thread Log Flush: <LogFlusher(Thread-22, initial)>
+2018-02-09 13:49:19,983 Detailed Log Writer       DEBUG      baseeventclasses.py       196   run Not starting thread Log Rotation: <LogRotator(Thread-7, initial)>
+2018-02-09 13:49:19,983 Click Image Capture       DEBUG      baseeventclasses.py       196   run Not starting thread Zip: <LogZipper(Thread-11, initial)>
+2018-02-09 13:49:19,984 Detailed Log Writer       DEBUG      baseeventclasses.py       196   run Not starting thread Old Log Deletion: <OldLogDeleter(Thread-5, initial)>
+2018-02-09 13:49:19,984 Click Image Capture       DEBUG      baseeventclasses.py       191   run Starting thread Log Flush: <LogFlusher(Thread-14, initial)>
+2018-02-09 13:49:19,984 Detailed Log Writer       DEBUG      baseeventclasses.py       196   run Not starting thread E-mail: <EmailLogSender(Thread-2, initial)>
+2018-02-09 13:49:19,984 Timed Screenshot Capture  DEBUG      baseeventclasses.py       196   run Not starting thread Log Rotation: <LogRotator(Thread-23, initial)>
+2018-02-09 13:49:19,986 Click Image Capture       DEBUG      baseeventclasses.py       196   run Not starting thread Log Rotation: <LogRotator(Thread-15, initial)>
+2018-02-09 13:49:19,986 Timed Screenshot Capture  DEBUG      baseeventclasses.py       196   run Not starting thread Old Log Deletion: <OldLogDeleter(Thread-21, initial)>
+2018-02-09 13:49:19,986 Click Image Capture       DEBUG      baseeventclasses.py       196   run Not starting thread Old Log Deletion: <OldLogDeleter(Thread-13, initial)>
+2018-02-09 13:49:19,986 Timed Screenshot Capture  DEBUG      baseeventclasses.py       196   run Not starting thread E-mail: <EmailLogSender(Thread-18, initial)>
+2018-02-09 13:49:19,986 Click Image Capture       DEBUG      baseeventclasses.py       196   run Not starting thread E-mail: <EmailLogSender(Thread-10, initial)>
+2018-02-09 13:49:21,017 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Detailed Log Writer
+2018-02-09 13:49:21,017 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Timed Screenshot Capture
+2018-02-09 13:49:21,017 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Click Image Capture
+2018-02-09 13:49:21,048 Timed Screenshot Capture  DEBUG      timedscreenshot.py        70    process_event User activity detected
+2018-02-09 13:49:21,048 Click Image Capture       DEBUG      onclickimagecapture.py    97    process_event Window: 0
+Window Handle: 
+Window's Process Name: noprocname
+Position: (146, 1070)
+MessageName: mouse left down
+
+2018-02-09 13:49:21,049 Click Image Capture       DEBUG      onclickimagecapture.py    122   capture_image [0,514][350,864]
+2018-02-09 13:49:21,141 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Detailed Log Writer
+2018-02-09 13:49:21,155 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Timed Screenshot Capture
+2018-02-09 13:49:21,157 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Click Image Capture
+2018-02-09 13:49:21,440 Timed Screenshot Capture  DEBUG      timedscreenshot.py        70    process_event User activity detected
+2018-02-09 13:49:21,585 Click Image Capture       DEBUG      onclickimagecapture.py    97    process_event Window: 0
+Window Handle: 
+Window's Process Name: noprocname
+Position: (146, 1070)
+MessageName: mouse left up
+
+2018-02-09 13:49:21,586 Click Image Capture       DEBUG      onclickimagecapture.py    122   capture_image [0,514][350,864]
+2018-02-09 13:49:21,930 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Detailed Log Writer
+2018-02-09 13:49:21,930 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Timed Screenshot Capture
+2018-02-09 13:49:21,930 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Click Image Capture
+2018-02-09 13:49:21,940 Timed Screenshot Capture  DEBUG      timedscreenshot.py        70    process_event User activity detected
+2018-02-09 13:49:21,941 Click Image Capture       DEBUG      onclickimagecapture.py    97    process_event Window: 0
+Window Handle: 
+Window's Process Name: noprocname
+Position: (166, 935)
+MessageName: mouse left down
+
+2018-02-09 13:49:21,943 Click Image Capture       DEBUG      onclickimagecapture.py    122   capture_image [0,514][350,864]
+2018-02-09 13:49:22,012 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Detailed Log Writer
+2018-02-09 13:49:22,022 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Timed Screenshot Capture
+2018-02-09 13:49:22,022 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Click Image Capture
+2018-02-09 13:49:22,025 Timed Screenshot Capture  DEBUG      timedscreenshot.py        70    process_event User activity detected
+2018-02-09 13:49:22,025 Click Image Capture       DEBUG      onclickimagecapture.py    97    process_event Window: 0
+Window Handle: 
+Window's Process Name: noprocname
+Position: (166, 935)
+MessageName: mouse left up
+
+2018-02-09 13:49:22,026 Click Image Capture       DEBUG      onclickimagecapture.py    122   capture_image [0,514][350,864]
+2018-02-09 13:49:23,302 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Detailed Log Writer
+2018-02-09 13:49:23,302 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Timed Screenshot Capture
+2018-02-09 13:49:23,302 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Click Image Capture
+2018-02-09 13:49:23,306 Timed Screenshot Capture  DEBUG      timedscreenshot.py        70    process_event User activity detected
+2018-02-09 13:49:23,306 Click Image Capture       DEBUG      onclickimagecapture.py    97    process_event Window: 66456
+Window Handle: Videollamada de Hangouts - Google Chrome
+Window's Process Name: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Position: (1234, 23)
+MessageName: mouse left down
+
+2018-02-09 13:49:23,308 Click Image Capture       DEBUG      onclickimagecapture.py    122   capture_image [1059,0][1409,350]
+2018-02-09 13:49:23,369 Click Image Capture       INFO       onclickimagecapture.py    323   write_to_logfile 20180209|1349|noprocname|0|USER||1536x864|146,1070,60505890,mouse left down,20180209_134921_157000_noprocname_USER.png 146,1070,60505953,mouse left up,20180209_134921_672000_noprocname_USER.png 166,935,60506796,mouse left down,20180209_134922_21000_noprocname_USER.png 166,935,60506875,mouse left up,20180209_134922_104000_noprocname_USER.png 
+2018-02-09 13:49:23,372 Click Image Capture       DEBUG      onclickimagecapture.py    300   process_event Error writing image to file
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\PracticaProfesional\TranslateKeylogger\Kit_ResearchLogger\ResearchLogger\onclickimagecapture.py", line 290, in process_event
+    image_data.save(savefilename, quality=qualitysetting)
+  File "C:\Python27\lib\site-packages\PIL\Image.py", line 1433, in save
+    fp = __builtin__.open(fp, "wb")
+IOError: [Errno 22] invalid mode ('wb') or filename: u'C:\\Users\\USER\\Desktop\\PracticaProfesional\\TranslateKeylogger\\Kit_ResearchLogger\\ResearchLogger\\logs-USER-1518205759\\click_images\\20180209_134923_369000_C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe_USER.png'
+2018-02-09 13:49:23,401 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Detailed Log Writer
+2018-02-09 13:49:23,401 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Timed Screenshot Capture
+2018-02-09 13:49:23,401 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Click Image Capture
+2018-02-09 13:49:23,417 Timed Screenshot Capture  DEBUG      timedscreenshot.py        70    process_event User activity detected
+2018-02-09 13:49:23,427 Click Image Capture       DEBUG      onclickimagecapture.py    97    process_event Window: 66456
+Window Handle: Videollamada de Hangouts - Google Chrome
+Window's Process Name: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Position: (1234, 23)
+MessageName: mouse left up
+
+2018-02-09 13:49:23,428 Click Image Capture       DEBUG      onclickimagecapture.py    122   capture_image [1059,0][1409,350]
+2018-02-09 13:49:23,513 Click Image Capture       DEBUG      onclickimagecapture.py    300   process_event Error writing image to file
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\PracticaProfesional\TranslateKeylogger\Kit_ResearchLogger\ResearchLogger\onclickimagecapture.py", line 290, in process_event
+    image_data.save(savefilename, quality=qualitysetting)
+  File "C:\Python27\lib\site-packages\PIL\Image.py", line 1433, in save
+    fp = __builtin__.open(fp, "wb")
+IOError: [Errno 22] invalid mode ('wb') or filename: u'C:\\Users\\USER\\Desktop\\PracticaProfesional\\TranslateKeylogger\\Kit_ResearchLogger\\ResearchLogger\\logs-USER-1518205759\\click_images\\20180209_134923_511000_C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe_USER.png'
+2018-02-09 13:49:24,566 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Detailed Log Writer
+2018-02-09 13:49:24,568 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Timed Screenshot Capture
+2018-02-09 13:49:24,568 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Click Image Capture
+2018-02-09 13:49:24,569 Detailed Log Writer       DEBUG      detailedlogwriter.py      78    process_event loggable, lets log it. key: G
+2018-02-09 13:49:24,571 Timed Screenshot Capture  DEBUG      timedscreenshot.py        70    process_event User activity detected
+2018-02-09 13:49:24,571 Click Image Capture       DEBUG      onclickimagecapture.py    102   process_event not a useful event: key down
+2018-02-09 13:49:24,641 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Detailed Log Writer
+2018-02-09 13:49:24,641 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Timed Screenshot Capture
+2018-02-09 13:49:24,641 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Click Image Capture
+2018-02-09 13:49:24,642 Timed Screenshot Capture  DEBUG      timedscreenshot.py        70    process_event User activity detected
+2018-02-09 13:49:24,644 Detailed Log Writer       DEBUG      detailedlogwriter.py      78    process_event loggable, lets log it. key: G
+2018-02-09 13:49:24,650 Click Image Capture       DEBUG      onclickimagecapture.py    102   process_event not a useful event: key up
+2018-02-09 13:49:24,730 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Detailed Log Writer
+2018-02-09 13:49:24,730 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Timed Screenshot Capture
+2018-02-09 13:49:24,730 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Click Image Capture
+2018-02-09 13:49:24,739 Timed Screenshot Capture  DEBUG      timedscreenshot.py        70    process_event User activity detected
+2018-02-09 13:49:24,739 Detailed Log Writer       DEBUG      detailedlogwriter.py      78    process_event loggable, lets log it. key: A
+2018-02-09 13:49:24,746 Click Image Capture       DEBUG      onclickimagecapture.py    102   process_event not a useful event: key down
+2018-02-09 13:49:24,818 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Detailed Log Writer
+2018-02-09 13:49:24,818 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Timed Screenshot Capture
+2018-02-09 13:49:24,819 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Click Image Capture
+2018-02-09 13:49:24,819 Click Image Capture       DEBUG      onclickimagecapture.py    102   process_event not a useful event: key up
+2018-02-09 13:49:24,832 Timed Screenshot Capture  DEBUG      timedscreenshot.py        70    process_event User activity detected
+2018-02-09 13:49:24,834 Detailed Log Writer       DEBUG      detailedlogwriter.py      78    process_event loggable, lets log it. key: A
+2018-02-09 13:49:24,887 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Detailed Log Writer
+2018-02-09 13:49:24,887 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Timed Screenshot Capture
+2018-02-09 13:49:24,887 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Click Image Capture
+2018-02-09 13:49:24,890 Detailed Log Writer       DEBUG      detailedlogwriter.py      78    process_event loggable, lets log it. key: M
+2018-02-09 13:49:24,890 Timed Screenshot Capture  DEBUG      timedscreenshot.py        70    process_event User activity detected
+2018-02-09 13:49:24,892 Click Image Capture       DEBUG      onclickimagecapture.py    102   process_event not a useful event: key down
+2018-02-09 13:49:24,933 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Detailed Log Writer
+2018-02-09 13:49:24,933 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Timed Screenshot Capture
+2018-02-09 13:49:24,934 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Click Image Capture
+2018-02-09 13:49:24,934 Click Image Capture       DEBUG      onclickimagecapture.py    102   process_event not a useful event: key up
+2018-02-09 13:49:24,941 Detailed Log Writer       DEBUG      detailedlogwriter.py      78    process_event loggable, lets log it. key: M
+2018-02-09 13:49:24,943 Timed Screenshot Capture  DEBUG      timedscreenshot.py        70    process_event User activity detected
+2018-02-09 13:49:25,933 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Detailed Log Writer
+2018-02-09 13:49:25,933 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Timed Screenshot Capture
+2018-02-09 13:49:25,933 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Click Image Capture
+2018-02-09 13:49:25,936 Timed Screenshot Capture  DEBUG      timedscreenshot.py        70    process_event User activity detected
+2018-02-09 13:49:25,944 Detailed Log Writer       DEBUG      detailedlogwriter.py      78    process_event loggable, lets log it. key: Back
+2018-02-09 13:49:25,946 Click Image Capture       DEBUG      onclickimagecapture.py    102   process_event not a useful event: key down
+2018-02-09 13:49:26,013 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Detailed Log Writer
+2018-02-09 13:49:26,013 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Timed Screenshot Capture
+2018-02-09 13:49:26,013 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Click Image Capture
+2018-02-09 13:49:26,013 Timed Screenshot Capture  DEBUG      timedscreenshot.py        70    process_event User activity detected
+2018-02-09 13:49:26,019 Detailed Log Writer       DEBUG      detailedlogwriter.py      78    process_event loggable, lets log it. key: Back
+2018-02-09 13:49:26,023 Click Image Capture       DEBUG      onclickimagecapture.py    102   process_event not a useful event: key up
+2018-02-09 13:49:26,711 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Detailed Log Writer
+2018-02-09 13:49:26,711 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Timed Screenshot Capture
+2018-02-09 13:49:26,713 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Click Image Capture
+2018-02-09 13:49:26,713 Click Image Capture       DEBUG      onclickimagecapture.py    102   process_event not a useful event: key down
+2018-02-09 13:49:26,717 Timed Screenshot Capture  DEBUG      timedscreenshot.py        70    process_event User activity detected
+2018-02-09 13:49:26,720 Detailed Log Writer       DEBUG      detailedlogwriter.py      78    process_event loggable, lets log it. key: Back
+2018-02-09 13:49:26,770 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Detailed Log Writer
+2018-02-09 13:49:26,772 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Timed Screenshot Capture
+2018-02-09 13:49:26,772 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Click Image Capture
+2018-02-09 13:49:26,775 Timed Screenshot Capture  DEBUG      timedscreenshot.py        70    process_event User activity detected
+2018-02-09 13:49:26,775 Detailed Log Writer       DEBUG      detailedlogwriter.py      78    process_event loggable, lets log it. key: Back
+2018-02-09 13:49:26,775 Click Image Capture       DEBUG      onclickimagecapture.py    102   process_event not a useful event: key up
+2018-02-09 13:49:26,882 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Detailed Log Writer
+2018-02-09 13:49:26,884 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Timed Screenshot Capture
+2018-02-09 13:49:26,884 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Click Image Capture
+2018-02-09 13:49:26,887 Click Image Capture       DEBUG      onclickimagecapture.py    102   process_event not a useful event: key down
+2018-02-09 13:49:26,887 Timed Screenshot Capture  DEBUG      timedscreenshot.py        70    process_event User activity detected
+2018-02-09 13:49:26,888 Detailed Log Writer       DEBUG      detailedlogwriter.py      78    process_event loggable, lets log it. key: Back
+2018-02-09 13:49:26,953 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Detailed Log Writer
+2018-02-09 13:49:26,953 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Timed Screenshot Capture
+2018-02-09 13:49:26,953 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Click Image Capture
+2018-02-09 13:49:26,963 Click Image Capture       DEBUG      onclickimagecapture.py    102   process_event not a useful event: key up
+2018-02-09 13:49:26,963 Timed Screenshot Capture  DEBUG      timedscreenshot.py        70    process_event User activity detected
+2018-02-09 13:49:26,963 Detailed Log Writer       DEBUG      detailedlogwriter.py      78    process_event loggable, lets log it. key: Back
+2018-02-09 13:49:27,342 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Detailed Log Writer
+2018-02-09 13:49:27,342 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Timed Screenshot Capture
+2018-02-09 13:49:27,342 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Click Image Capture
+2018-02-09 13:49:27,348 Click Image Capture       DEBUG      onclickimagecapture.py    102   process_event not a useful event: key down
+2018-02-09 13:49:27,348 Timed Screenshot Capture  DEBUG      timedscreenshot.py        70    process_event User activity detected
+2018-02-09 13:49:27,351 Detailed Log Writer       DEBUG      detailedlogwriter.py      78    process_event loggable, lets log it. key: M
+2018-02-09 13:49:27,411 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Detailed Log Writer
+2018-02-09 13:49:27,411 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Timed Screenshot Capture
+2018-02-09 13:49:27,413 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Click Image Capture
+2018-02-09 13:49:27,414 Detailed Log Writer       DEBUG      detailedlogwriter.py      78    process_event loggable, lets log it. key: M
+2018-02-09 13:49:27,415 Timed Screenshot Capture  DEBUG      timedscreenshot.py        70    process_event User activity detected
+2018-02-09 13:49:27,417 Click Image Capture       DEBUG      onclickimagecapture.py    102   process_event not a useful event: key up
+2018-02-09 13:49:27,476 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Detailed Log Writer
+2018-02-09 13:49:27,476 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Timed Screenshot Capture
+2018-02-09 13:49:27,476 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Click Image Capture
+2018-02-09 13:49:27,479 Detailed Log Writer       DEBUG      detailedlogwriter.py      78    process_event loggable, lets log it. key: A
+2018-02-09 13:49:27,483 Click Image Capture       DEBUG      onclickimagecapture.py    102   process_event not a useful event: key down
+2018-02-09 13:49:27,483 Timed Screenshot Capture  DEBUG      timedscreenshot.py        70    process_event User activity detected
+2018-02-09 13:49:27,551 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Detailed Log Writer
+2018-02-09 13:49:27,551 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Timed Screenshot Capture
+2018-02-09 13:49:27,552 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Click Image Capture
+2018-02-09 13:49:27,558 Detailed Log Writer       DEBUG      detailedlogwriter.py      78    process_event loggable, lets log it. key: A
+2018-02-09 13:49:27,561 Click Image Capture       DEBUG      onclickimagecapture.py    102   process_event not a useful event: key up
+2018-02-09 13:49:27,561 Timed Screenshot Capture  DEBUG      timedscreenshot.py        70    process_event User activity detected
+2018-02-09 13:49:28,092 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Detailed Log Writer
+2018-02-09 13:49:28,092 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Timed Screenshot Capture
+2018-02-09 13:49:28,092 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Click Image Capture
+2018-02-09 13:49:28,099 Detailed Log Writer       DEBUG      detailedlogwriter.py      78    process_event loggable, lets log it. key: Return
+2018-02-09 13:49:28,102 Click Image Capture       DEBUG      onclickimagecapture.py    102   process_event not a useful event: key down
+2018-02-09 13:49:28,102 Timed Screenshot Capture  DEBUG      timedscreenshot.py        70    process_event User activity detected
+2018-02-09 13:49:28,158 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Detailed Log Writer
+2018-02-09 13:49:28,158 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Timed Screenshot Capture
+2018-02-09 13:49:28,160 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Click Image Capture
+2018-02-09 13:49:28,160 Detailed Log Writer       DEBUG      detailedlogwriter.py      78    process_event loggable, lets log it. key: Return
+2018-02-09 13:49:28,164 Timed Screenshot Capture  DEBUG      timedscreenshot.py        70    process_event User activity detected
+2018-02-09 13:49:28,165 Click Image Capture       DEBUG      onclickimagecapture.py    102   process_event not a useful event: key up
+2018-02-09 13:49:29,983 Detailed Log Writer       DEBUG      timerthreads.py           163   flush_log_write_buffer Flushing file write buffers.
+2018-02-09 13:49:33,690 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Detailed Log Writer
+2018-02-09 13:49:33,691 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Timed Screenshot Capture
+2018-02-09 13:49:33,691 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Click Image Capture
+2018-02-09 13:49:33,694 Timed Screenshot Capture  DEBUG      timedscreenshot.py        70    process_event User activity detected
+2018-02-09 13:49:33,698 Click Image Capture       DEBUG      onclickimagecapture.py    97    process_event Window: 657308
+Window Handle: Chrome Legacy Window
+Window's Process Name: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Position: (630, 126)
+MessageName: mouse left down
+
+2018-02-09 13:49:33,698 Click Image Capture       DEBUG      onclickimagecapture.py    122   capture_image [455,0][805,350]
+2018-02-09 13:49:33,750 Click Image Capture       INFO       onclickimagecapture.py    323   write_to_logfile 20180209|1349|C:\Program Files (x86)\Google\Chrome\Application\chrome.exe|66456|USER|Videollamada de Hangouts - Google Chrome|1536x864|1234,23,60508171,mouse left down,20180209_134923_369000_C:\Program Files (x86)\Google\Chrome\Application\chrome.exe_USER.png 1234,23,60508281,mouse left up,20180209_134923_511000_C:\Program Files (x86)\Google\Chrome\Application\chrome.exe_USER.png 
+2018-02-09 13:49:33,752 Click Image Capture       DEBUG      onclickimagecapture.py    300   process_event Error writing image to file
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\PracticaProfesional\TranslateKeylogger\Kit_ResearchLogger\ResearchLogger\onclickimagecapture.py", line 290, in process_event
+    image_data.save(savefilename, quality=qualitysetting)
+  File "C:\Python27\lib\site-packages\PIL\Image.py", line 1433, in save
+    fp = __builtin__.open(fp, "wb")
+IOError: [Errno 22] invalid mode ('wb') or filename: u'C:\\Users\\USER\\Desktop\\PracticaProfesional\\TranslateKeylogger\\Kit_ResearchLogger\\ResearchLogger\\logs-USER-1518205759\\click_images\\20180209_134933_750000_C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe_USER.png'
+2018-02-09 13:49:33,793 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Detailed Log Writer
+2018-02-09 13:49:33,793 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Timed Screenshot Capture
+2018-02-09 13:49:33,793 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Click Image Capture
+2018-02-09 13:49:33,802 Timed Screenshot Capture  DEBUG      timedscreenshot.py        70    process_event User activity detected
+2018-02-09 13:49:33,802 Click Image Capture       DEBUG      onclickimagecapture.py    97    process_event Window: 657308
+Window Handle: Chrome Legacy Window
+Window's Process Name: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Position: (630, 126)
+MessageName: mouse left up
+
+2018-02-09 13:49:33,802 Click Image Capture       DEBUG      onclickimagecapture.py    122   capture_image [455,0][805,350]
+2018-02-09 13:49:33,849 Click Image Capture       DEBUG      onclickimagecapture.py    300   process_event Error writing image to file
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\PracticaProfesional\TranslateKeylogger\Kit_ResearchLogger\ResearchLogger\onclickimagecapture.py", line 290, in process_event
+    image_data.save(savefilename, quality=qualitysetting)
+  File "C:\Python27\lib\site-packages\PIL\Image.py", line 1433, in save
+    fp = __builtin__.open(fp, "wb")
+IOError: [Errno 22] invalid mode ('wb') or filename: u'C:\\Users\\USER\\Desktop\\PracticaProfesional\\TranslateKeylogger\\Kit_ResearchLogger\\ResearchLogger\\logs-USER-1518205759\\click_images\\20180209_134933_849000_C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe_USER.png'
+2018-02-09 13:49:35,117 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Detailed Log Writer
+2018-02-09 13:49:35,118 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Timed Screenshot Capture
+2018-02-09 13:49:35,118 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Click Image Capture
+2018-02-09 13:49:35,121 Click Image Capture       DEBUG      onclickimagecapture.py    102   process_event not a useful event: key down
+2018-02-09 13:49:35,128 Timed Screenshot Capture  DEBUG      timedscreenshot.py        70    process_event User activity detected
+2018-02-09 13:49:35,128 Detailed Log Writer       DEBUG      detailedlogwriter.py      78    process_event loggable, lets log it. key: W
+2018-02-09 13:49:35,145 Detailed Log Writer       INFO       detailedlogwriter.py      233   write_to_logfile 20180209|1349|C:\Program Files (x86)\Google\Chrome\Application\chrome.exe|66456|USER|Nueva pestaña - Google Chrome|60509437,G,key down 60509515,G,key up 60509609,A,key down 60509687,A,key up 60509765,M,key down 60509812,M,key up 60510812,Back,key down 60510890,Back,key up 60511578,Back,key down 60511640,Back,key up 60511750,Back,key down 60511828,Back,key up 60512218,M,key down 60512281,M,key up 60512343,A,key down 60512421,A,key up 60512968,Return,key down 60513031,Return,key up 
+2018-02-09 13:49:35,219 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Detailed Log Writer
+2018-02-09 13:49:35,220 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Timed Screenshot Capture
+2018-02-09 13:49:35,220 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Click Image Capture
+2018-02-09 13:49:35,223 Timed Screenshot Capture  DEBUG      timedscreenshot.py        70    process_event User activity detected
+2018-02-09 13:49:35,223 Click Image Capture       DEBUG      onclickimagecapture.py    102   process_event not a useful event: key up
+2018-02-09 13:49:35,224 Detailed Log Writer       DEBUG      detailedlogwriter.py      78    process_event loggable, lets log it. key: W
+2018-02-09 13:49:35,395 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Detailed Log Writer
+2018-02-09 13:49:35,395 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Timed Screenshot Capture
+2018-02-09 13:49:35,395 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Click Image Capture
+2018-02-09 13:49:35,404 Click Image Capture       DEBUG      onclickimagecapture.py    102   process_event not a useful event: key down
+2018-02-09 13:49:35,404 Timed Screenshot Capture  DEBUG      timedscreenshot.py        70    process_event User activity detected
+2018-02-09 13:49:35,405 Detailed Log Writer       DEBUG      detailedlogwriter.py      78    process_event loggable, lets log it. key: A
+2018-02-09 13:49:35,526 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Detailed Log Writer
+2018-02-09 13:49:35,528 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Timed Screenshot Capture
+2018-02-09 13:49:35,528 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Click Image Capture
+2018-02-09 13:49:35,533 Timed Screenshot Capture  DEBUG      timedscreenshot.py        70    process_event User activity detected
+2018-02-09 13:49:35,533 Click Image Capture       DEBUG      onclickimagecapture.py    102   process_event not a useful event: key up
+2018-02-09 13:49:35,535 Detailed Log Writer       DEBUG      detailedlogwriter.py      78    process_event loggable, lets log it. key: A
+2018-02-09 13:49:35,671 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Detailed Log Writer
+2018-02-09 13:49:35,671 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Timed Screenshot Capture
+2018-02-09 13:49:35,671 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Click Image Capture
+2018-02-09 13:49:35,680 Timed Screenshot Capture  DEBUG      timedscreenshot.py        70    process_event User activity detected
+2018-02-09 13:49:35,680 Click Image Capture       DEBUG      onclickimagecapture.py    102   process_event not a useful event: key down
+2018-02-09 13:49:35,680 Detailed Log Writer       DEBUG      detailedlogwriter.py      78    process_event loggable, lets log it. key: L
+2018-02-09 13:49:35,776 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Detailed Log Writer
+2018-02-09 13:49:35,776 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Timed Screenshot Capture
+2018-02-09 13:49:35,776 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Click Image Capture
+2018-02-09 13:49:35,782 Timed Screenshot Capture  DEBUG      timedscreenshot.py        70    process_event User activity detected
+2018-02-09 13:49:35,782 Click Image Capture       DEBUG      onclickimagecapture.py    102   process_event not a useful event: key up
+2018-02-09 13:49:35,783 Detailed Log Writer       DEBUG      detailedlogwriter.py      78    process_event loggable, lets log it. key: L
+2018-02-09 13:49:35,930 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Detailed Log Writer
+2018-02-09 13:49:35,930 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Timed Screenshot Capture
+2018-02-09 13:49:35,930 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Click Image Capture
+2018-02-09 13:49:35,934 Click Image Capture       DEBUG      onclickimagecapture.py    102   process_event not a useful event: key down
+2018-02-09 13:49:35,934 Detailed Log Writer       DEBUG      detailedlogwriter.py      78    process_event loggable, lets log it. key: T
+2018-02-09 13:49:35,934 Timed Screenshot Capture  DEBUG      timedscreenshot.py        70    process_event User activity detected
+2018-02-09 13:49:36,023 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Detailed Log Writer
+2018-02-09 13:49:36,023 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Timed Screenshot Capture
+2018-02-09 13:49:36,023 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Click Image Capture
+2018-02-09 13:49:36,029 Timed Screenshot Capture  DEBUG      timedscreenshot.py        70    process_event User activity detected
+2018-02-09 13:49:36,029 Click Image Capture       DEBUG      onclickimagecapture.py    102   process_event not a useful event: key up
+2018-02-09 13:49:36,029 Detailed Log Writer       DEBUG      detailedlogwriter.py      78    process_event loggable, lets log it. key: T
+2018-02-09 13:49:36,154 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Detailed Log Writer
+2018-02-09 13:49:36,154 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Timed Screenshot Capture
+2018-02-09 13:49:36,154 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Click Image Capture
+2018-02-09 13:49:36,154 Timed Screenshot Capture  DEBUG      timedscreenshot.py        70    process_event User activity detected
+2018-02-09 13:49:36,164 Detailed Log Writer       DEBUG      detailedlogwriter.py      78    process_event loggable, lets log it. key: E
+2018-02-09 13:49:36,173 Click Image Capture       DEBUG      onclickimagecapture.py    102   process_event not a useful event: key down
+2018-02-09 13:49:36,255 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Detailed Log Writer
+2018-02-09 13:49:36,255 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Timed Screenshot Capture
+2018-02-09 13:49:36,256 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Click Image Capture
+2018-02-09 13:49:36,262 Timed Screenshot Capture  DEBUG      timedscreenshot.py        70    process_event User activity detected
+2018-02-09 13:49:36,265 Detailed Log Writer       DEBUG      detailedlogwriter.py      78    process_event loggable, lets log it. key: E
+2018-02-09 13:49:36,267 Click Image Capture       DEBUG      onclickimagecapture.py    102   process_event not a useful event: key up
+2018-02-09 13:49:36,447 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Detailed Log Writer
+2018-02-09 13:49:36,447 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Timed Screenshot Capture
+2018-02-09 13:49:36,447 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Click Image Capture
+2018-02-09 13:49:36,447 Click Image Capture       DEBUG      onclickimagecapture.py    102   process_event not a useful event: key down
+2018-02-09 13:49:36,461 Timed Screenshot Capture  DEBUG      timedscreenshot.py        70    process_event User activity detected
+2018-02-09 13:49:36,461 Detailed Log Writer       DEBUG      detailedlogwriter.py      78    process_event loggable, lets log it. key: R
+2018-02-09 13:49:36,558 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Detailed Log Writer
+2018-02-09 13:49:36,558 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Timed Screenshot Capture
+2018-02-09 13:49:36,558 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Click Image Capture
+2018-02-09 13:49:36,559 Detailed Log Writer       DEBUG      detailedlogwriter.py      78    process_event loggable, lets log it. key: R
+2018-02-09 13:49:36,559 Timed Screenshot Capture  DEBUG      timedscreenshot.py        70    process_event User activity detected
+2018-02-09 13:49:36,562 Click Image Capture       DEBUG      onclickimagecapture.py    102   process_event not a useful event: key up
+2018-02-09 13:49:38,957 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Detailed Log Writer
+2018-02-09 13:49:38,957 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Timed Screenshot Capture
+2018-02-09 13:49:38,957 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Click Image Capture
+2018-02-09 13:49:38,970 Timed Screenshot Capture  DEBUG      timedscreenshot.py        70    process_event User activity detected
+2018-02-09 13:49:38,970 Click Image Capture       DEBUG      onclickimagecapture.py    97    process_event Window: 66456
+Window Handle: Recibidos (36) - patch2995@gmail.com - Gmail - Google Chrome
+Window's Process Name: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Position: (1495, 17)
+MessageName: mouse left down
+
+2018-02-09 13:49:38,973 Click Image Capture       DEBUG      onclickimagecapture.py    122   capture_image [1186,0][1536,350]
+2018-02-09 13:49:39,049 Click Image Capture       INFO       onclickimagecapture.py    323   write_to_logfile 20180209|1349|C:\Program Files (x86)\Google\Chrome\Application\chrome.exe|657308|USER|Chrome Legacy Window|1536x864|630,126,60518562,mouse left down,20180209_134933_750000_C:\Program Files (x86)\Google\Chrome\Application\chrome.exe_USER.png 630,126,60518671,mouse left up,20180209_134933_849000_C:\Program Files (x86)\Google\Chrome\Application\chrome.exe_USER.png 
+2018-02-09 13:49:39,049 Click Image Capture       DEBUG      onclickimagecapture.py    300   process_event Error writing image to file
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\PracticaProfesional\TranslateKeylogger\Kit_ResearchLogger\ResearchLogger\onclickimagecapture.py", line 290, in process_event
+    image_data.save(savefilename, quality=qualitysetting)
+  File "C:\Python27\lib\site-packages\PIL\Image.py", line 1433, in save
+    fp = __builtin__.open(fp, "wb")
+IOError: [Errno 22] invalid mode ('wb') or filename: u'C:\\Users\\USER\\Desktop\\PracticaProfesional\\TranslateKeylogger\\Kit_ResearchLogger\\ResearchLogger\\logs-USER-1518205759\\click_images\\20180209_134939_49000_C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe_USER.png'
+2018-02-09 13:49:39,058 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Detailed Log Writer
+2018-02-09 13:49:39,058 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Timed Screenshot Capture
+2018-02-09 13:49:39,058 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Click Image Capture
+2018-02-09 13:49:39,059 Click Image Capture       DEBUG      onclickimagecapture.py    97    process_event Window: 66456
+Window Handle: Recibidos (36) - patch2995@gmail.com - Gmail - Google Chrome
+Window's Process Name: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Position: (1495, 17)
+MessageName: mouse left up
+
+2018-02-09 13:49:39,059 Timed Screenshot Capture  DEBUG      timedscreenshot.py        70    process_event User activity detected
+2018-02-09 13:49:39,061 Click Image Capture       DEBUG      onclickimagecapture.py    122   capture_image [1186,0][1536,350]
+2018-02-09 13:49:39,112 Click Image Capture       DEBUG      onclickimagecapture.py    300   process_event Error writing image to file
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\PracticaProfesional\TranslateKeylogger\Kit_ResearchLogger\ResearchLogger\onclickimagecapture.py", line 290, in process_event
+    image_data.save(savefilename, quality=qualitysetting)
+  File "C:\Python27\lib\site-packages\PIL\Image.py", line 1433, in save
+    fp = __builtin__.open(fp, "wb")
+IOError: [Errno 22] invalid mode ('wb') or filename: u'C:\\Users\\USER\\Desktop\\PracticaProfesional\\TranslateKeylogger\\Kit_ResearchLogger\\ResearchLogger\\logs-USER-1518205759\\click_images\\20180209_134939_110000_C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe_USER.png'
+2018-02-09 13:49:39,984 Detailed Log Writer       DEBUG      timerthreads.py           163   flush_log_write_buffer Flushing file write buffers.
+2018-02-09 13:49:40,621 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Detailed Log Writer
+2018-02-09 13:49:40,621 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Timed Screenshot Capture
+2018-02-09 13:49:40,621 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Click Image Capture
+2018-02-09 13:49:40,625 Click Image Capture       DEBUG      onclickimagecapture.py    102   process_event not a useful event: key down
+2018-02-09 13:49:40,625 Detailed Log Writer       DEBUG      detailedlogwriter.py      78    process_event loggable, lets log it. key: F
+2018-02-09 13:49:40,627 Timed Screenshot Capture  DEBUG      timedscreenshot.py        70    process_event User activity detected
+2018-02-09 13:49:40,628 Detailed Log Writer       INFO       detailedlogwriter.py      233   write_to_logfile 20180209|1349|C:\Program Files (x86)\Google\Chrome\Application\chrome.exe|66456|USER|Recibidos (36) - patch2995@gmail.com - Gmail - Google Chrome|60519984,W,key down 60520093,W,key up 60520265,A,key down 60520406,A,key up 60520546,L,key down 60520656,L,key up 60520796,T,key down 60520890,T,key up 60521031,E,key down 60521125,E,key up 60521312,R,key down 60521437,R,key up 
+2018-02-09 13:49:40,693 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Detailed Log Writer
+2018-02-09 13:49:40,693 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Timed Screenshot Capture
+2018-02-09 13:49:40,693 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Click Image Capture
+2018-02-09 13:49:40,706 Click Image Capture       DEBUG      onclickimagecapture.py    102   process_event not a useful event: key up
+2018-02-09 13:49:40,706 Timed Screenshot Capture  DEBUG      timedscreenshot.py        70    process_event User activity detected
+2018-02-09 13:49:40,706 Detailed Log Writer       DEBUG      detailedlogwriter.py      78    process_event loggable, lets log it. key: F
+2018-02-09 13:49:40,746 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Detailed Log Writer
+2018-02-09 13:49:40,746 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Timed Screenshot Capture
+2018-02-09 13:49:40,746 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Click Image Capture
+2018-02-09 13:49:40,756 Click Image Capture       DEBUG      onclickimagecapture.py    102   process_event not a useful event: key down
+2018-02-09 13:49:40,756 Timed Screenshot Capture  DEBUG      timedscreenshot.py        70    process_event User activity detected
+2018-02-09 13:49:40,756 Detailed Log Writer       DEBUG      detailedlogwriter.py      78    process_event loggable, lets log it. key: A
+2018-02-09 13:49:40,835 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Detailed Log Writer
+2018-02-09 13:49:40,836 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Timed Screenshot Capture
+2018-02-09 13:49:40,836 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Click Image Capture
+2018-02-09 13:49:40,836 Timed Screenshot Capture  DEBUG      timedscreenshot.py        70    process_event User activity detected
+2018-02-09 13:49:40,838 Click Image Capture       DEBUG      onclickimagecapture.py    102   process_event not a useful event: key up
+2018-02-09 13:49:40,839 Detailed Log Writer       DEBUG      detailedlogwriter.py      78    process_event loggable, lets log it. key: A
+2018-02-09 13:49:40,914 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Detailed Log Writer
+2018-02-09 13:49:40,914 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Timed Screenshot Capture
+2018-02-09 13:49:40,914 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Click Image Capture
+2018-02-09 13:49:40,914 Timed Screenshot Capture  DEBUG      timedscreenshot.py        70    process_event User activity detected
+2018-02-09 13:49:40,914 Click Image Capture       DEBUG      onclickimagecapture.py    102   process_event not a useful event: key down
+2018-02-09 13:49:40,915 Detailed Log Writer       DEBUG      detailedlogwriter.py      78    process_event loggable, lets log it. key: C
+2018-02-09 13:49:41,000 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Detailed Log Writer
+2018-02-09 13:49:41,000 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Timed Screenshot Capture
+2018-02-09 13:49:41,003 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Click Image Capture
+2018-02-09 13:49:41,010 Timed Screenshot Capture  DEBUG      timedscreenshot.py        70    process_event User activity detected
+2018-02-09 13:49:41,029 Click Image Capture       DEBUG      onclickimagecapture.py    102   process_event not a useful event: key up
+2018-02-09 13:49:41,035 Detailed Log Writer       DEBUG      detailedlogwriter.py      78    process_event loggable, lets log it. key: C
+2018-02-09 13:49:41,063 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Detailed Log Writer
+2018-02-09 13:49:41,065 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Timed Screenshot Capture
+2018-02-09 13:49:41,065 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Click Image Capture
+2018-02-09 13:49:41,076 Click Image Capture       DEBUG      onclickimagecapture.py    102   process_event not a useful event: key down
+2018-02-09 13:49:41,076 Timed Screenshot Capture  DEBUG      timedscreenshot.py        70    process_event User activity detected
+2018-02-09 13:49:41,076 Detailed Log Writer       DEBUG      detailedlogwriter.py      78    process_event loggable, lets log it. key: E
+2018-02-09 13:49:41,167 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Detailed Log Writer
+2018-02-09 13:49:41,167 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Timed Screenshot Capture
+2018-02-09 13:49:41,167 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Click Image Capture
+2018-02-09 13:49:41,171 Click Image Capture       DEBUG      onclickimagecapture.py    102   process_event not a useful event: key up
+2018-02-09 13:49:41,173 Timed Screenshot Capture  DEBUG      timedscreenshot.py        70    process_event User activity detected
+2018-02-09 13:49:41,176 Detailed Log Writer       DEBUG      detailedlogwriter.py      78    process_event loggable, lets log it. key: E
+2018-02-09 13:49:41,736 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Detailed Log Writer
+2018-02-09 13:49:41,736 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Timed Screenshot Capture
+2018-02-09 13:49:41,736 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Click Image Capture
+2018-02-09 13:49:41,739 Click Image Capture       DEBUG      onclickimagecapture.py    102   process_event not a useful event: key down
+2018-02-09 13:49:41,740 Detailed Log Writer       DEBUG      detailedlogwriter.py      78    process_event loggable, lets log it. key: Return
+2018-02-09 13:49:41,739 Timed Screenshot Capture  DEBUG      timedscreenshot.py        70    process_event User activity detected
+2018-02-09 13:49:41,805 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Detailed Log Writer
+2018-02-09 13:49:41,805 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Timed Screenshot Capture
+2018-02-09 13:49:41,805 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Click Image Capture
+2018-02-09 13:49:41,809 Timed Screenshot Capture  DEBUG      timedscreenshot.py        70    process_event User activity detected
+2018-02-09 13:49:41,809 Detailed Log Writer       DEBUG      detailedlogwriter.py      78    process_event loggable, lets log it. key: Return
+2018-02-09 13:49:41,811 Click Image Capture       DEBUG      onclickimagecapture.py    102   process_event not a useful event: key up
+2018-02-09 13:49:43,694 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Detailed Log Writer
+2018-02-09 13:49:43,694 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Timed Screenshot Capture
+2018-02-09 13:49:43,694 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Click Image Capture
+2018-02-09 13:49:43,697 Timed Screenshot Capture  DEBUG      timedscreenshot.py        70    process_event User activity detected
+2018-02-09 13:49:43,700 Click Image Capture       DEBUG      onclickimagecapture.py    97    process_event Window: 329624
+Window Handle: Chrome Legacy Window
+Window's Process Name: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Position: (613, 109)
+MessageName: mouse left down
+
+2018-02-09 13:49:43,700 Click Image Capture       DEBUG      onclickimagecapture.py    122   capture_image [438,0][788,350]
+2018-02-09 13:49:43,743 Click Image Capture       INFO       onclickimagecapture.py    323   write_to_logfile 20180209|1349|C:\Program Files (x86)\Google\Chrome\Application\chrome.exe|66456|USER|Recibidos (36) - patch2995@gmail.com - Gmail - Google Chrome|1536x864|1495,17,60523828,mouse left down,20180209_134939_49000_C:\Program Files (x86)\Google\Chrome\Application\chrome.exe_USER.png 1495,17,60523937,mouse left up,20180209_134939_110000_C:\Program Files (x86)\Google\Chrome\Application\chrome.exe_USER.png 
+2018-02-09 13:49:43,747 Click Image Capture       DEBUG      onclickimagecapture.py    300   process_event Error writing image to file
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\PracticaProfesional\TranslateKeylogger\Kit_ResearchLogger\ResearchLogger\onclickimagecapture.py", line 290, in process_event
+    image_data.save(savefilename, quality=qualitysetting)
+  File "C:\Python27\lib\site-packages\PIL\Image.py", line 1433, in save
+    fp = __builtin__.open(fp, "wb")
+IOError: [Errno 22] invalid mode ('wb') or filename: u'C:\\Users\\USER\\Desktop\\PracticaProfesional\\TranslateKeylogger\\Kit_ResearchLogger\\ResearchLogger\\logs-USER-1518205759\\click_images\\20180209_134943_744000_C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe_USER.png'
+2018-02-09 13:49:43,813 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Detailed Log Writer
+2018-02-09 13:49:43,813 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Timed Screenshot Capture
+2018-02-09 13:49:43,813 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Click Image Capture
+2018-02-09 13:49:43,816 Timed Screenshot Capture  DEBUG      timedscreenshot.py        70    process_event User activity detected
+2018-02-09 13:49:43,816 Click Image Capture       DEBUG      onclickimagecapture.py    97    process_event Window: 329624
+Window Handle: Chrome Legacy Window
+Window's Process Name: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Position: (613, 109)
+MessageName: mouse left up
+
+2018-02-09 13:49:43,818 Click Image Capture       DEBUG      onclickimagecapture.py    122   capture_image [438,0][788,350]
+2018-02-09 13:49:43,864 Click Image Capture       DEBUG      onclickimagecapture.py    300   process_event Error writing image to file
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\PracticaProfesional\TranslateKeylogger\Kit_ResearchLogger\ResearchLogger\onclickimagecapture.py", line 290, in process_event
+    image_data.save(savefilename, quality=qualitysetting)
+  File "C:\Python27\lib\site-packages\PIL\Image.py", line 1433, in save
+    fp = __builtin__.open(fp, "wb")
+IOError: [Errno 22] invalid mode ('wb') or filename: u'C:\\Users\\USER\\Desktop\\PracticaProfesional\\TranslateKeylogger\\Kit_ResearchLogger\\ResearchLogger\\logs-USER-1518205759\\click_images\\20180209_134943_863000_C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe_USER.png'
+2018-02-09 13:49:44,673 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Detailed Log Writer
+2018-02-09 13:49:44,674 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Timed Screenshot Capture
+2018-02-09 13:49:44,674 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Click Image Capture
+2018-02-09 13:49:44,674 Timed Screenshot Capture  DEBUG      timedscreenshot.py        70    process_event User activity detected
+2018-02-09 13:49:44,674 Detailed Log Writer       DEBUG      detailedlogwriter.py      78    process_event loggable, lets log it. key: W
+2018-02-09 13:49:44,680 Click Image Capture       DEBUG      onclickimagecapture.py    102   process_event not a useful event: key down
+2018-02-09 13:49:44,681 Detailed Log Writer       INFO       detailedlogwriter.py      233   write_to_logfile 20180209|1349|C:\Program Files (x86)\Google\Chrome\Application\chrome.exe|66456|USER|Nueva pestaña - Google Chrome|60525500,F,key down 60525562,F,key up 60525625,A,key down 60525703,A,key up 60525781,C,key down 60525875,C,key up 60525937,E,key down 60526046,E,key up 60526609,Return,key down 60526671,Return,key up 
+2018-02-09 13:49:44,744 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Detailed Log Writer
+2018-02-09 13:49:44,744 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Timed Screenshot Capture
+2018-02-09 13:49:44,744 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Click Image Capture
+2018-02-09 13:49:44,747 Click Image Capture       DEBUG      onclickimagecapture.py    102   process_event not a useful event: key up
+2018-02-09 13:49:44,750 Timed Screenshot Capture  DEBUG      timedscreenshot.py        70    process_event User activity detected
+2018-02-09 13:49:44,752 Detailed Log Writer       DEBUG      detailedlogwriter.py      78    process_event loggable, lets log it. key: W
+2018-02-09 13:49:44,914 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Detailed Log Writer
+2018-02-09 13:49:44,914 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Timed Screenshot Capture
+2018-02-09 13:49:44,914 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Click Image Capture
+2018-02-09 13:49:44,915 Click Image Capture       DEBUG      onclickimagecapture.py    102   process_event not a useful event: key down
+2018-02-09 13:49:44,918 Detailed Log Writer       DEBUG      detailedlogwriter.py      78    process_event loggable, lets log it. key: A
+2018-02-09 13:49:44,920 Timed Screenshot Capture  DEBUG      timedscreenshot.py        70    process_event User activity detected
+2018-02-09 13:49:45,023 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Detailed Log Writer
+2018-02-09 13:49:45,025 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Timed Screenshot Capture
+2018-02-09 13:49:45,025 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Click Image Capture
+2018-02-09 13:49:45,026 Click Image Capture       DEBUG      onclickimagecapture.py    102   process_event not a useful event: key up
+2018-02-09 13:49:45,026 Timed Screenshot Capture  DEBUG      timedscreenshot.py        70    process_event User activity detected
+2018-02-09 13:49:45,026 Detailed Log Writer       DEBUG      detailedlogwriter.py      78    process_event loggable, lets log it. key: A
+2018-02-09 13:49:45,165 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Detailed Log Writer
+2018-02-09 13:49:45,165 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Timed Screenshot Capture
+2018-02-09 13:49:45,165 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Click Image Capture
+2018-02-09 13:49:45,173 Click Image Capture       DEBUG      onclickimagecapture.py    102   process_event not a useful event: key down
+2018-02-09 13:49:45,173 Timed Screenshot Capture  DEBUG      timedscreenshot.py        70    process_event User activity detected
+2018-02-09 13:49:45,174 Detailed Log Writer       DEBUG      detailedlogwriter.py      78    process_event loggable, lets log it. key: L
+2018-02-09 13:49:45,242 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Detailed Log Writer
+2018-02-09 13:49:45,242 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Timed Screenshot Capture
+2018-02-09 13:49:45,242 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Click Image Capture
+2018-02-09 13:49:45,250 Click Image Capture       DEBUG      onclickimagecapture.py    102   process_event not a useful event: key up
+2018-02-09 13:49:45,250 Timed Screenshot Capture  DEBUG      timedscreenshot.py        70    process_event User activity detected
+2018-02-09 13:49:45,250 Detailed Log Writer       DEBUG      detailedlogwriter.py      78    process_event loggable, lets log it. key: L
+2018-02-09 13:49:45,381 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Detailed Log Writer
+2018-02-09 13:49:45,381 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Timed Screenshot Capture
+2018-02-09 13:49:45,381 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Click Image Capture
+2018-02-09 13:49:45,398 Click Image Capture       DEBUG      onclickimagecapture.py    102   process_event not a useful event: key down
+2018-02-09 13:49:45,398 Timed Screenshot Capture  DEBUG      timedscreenshot.py        70    process_event User activity detected
+2018-02-09 13:49:45,398 Detailed Log Writer       DEBUG      detailedlogwriter.py      78    process_event loggable, lets log it. key: T
+2018-02-09 13:49:45,496 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Detailed Log Writer
+2018-02-09 13:49:45,496 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Timed Screenshot Capture
+2018-02-09 13:49:45,496 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Click Image Capture
+2018-02-09 13:49:45,500 Click Image Capture       DEBUG      onclickimagecapture.py    102   process_event not a useful event: key up
+2018-02-09 13:49:45,500 Timed Screenshot Capture  DEBUG      timedscreenshot.py        70    process_event User activity detected
+2018-02-09 13:49:45,500 Detailed Log Writer       DEBUG      detailedlogwriter.py      78    process_event loggable, lets log it. key: T
+2018-02-09 13:49:45,618 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Detailed Log Writer
+2018-02-09 13:49:45,618 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Timed Screenshot Capture
+2018-02-09 13:49:45,618 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Click Image Capture
+2018-02-09 13:49:45,630 Timed Screenshot Capture  DEBUG      timedscreenshot.py        70    process_event User activity detected
+2018-02-09 13:49:45,630 Click Image Capture       DEBUG      onclickimagecapture.py    102   process_event not a useful event: key down
+2018-02-09 13:49:45,630 Detailed Log Writer       DEBUG      detailedlogwriter.py      78    process_event loggable, lets log it. key: E
+2018-02-09 13:49:45,729 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Detailed Log Writer
+2018-02-09 13:49:45,730 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Timed Screenshot Capture
+2018-02-09 13:49:45,730 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Click Image Capture
+2018-02-09 13:49:45,736 Click Image Capture       DEBUG      onclickimagecapture.py    102   process_event not a useful event: key up
+2018-02-09 13:49:45,736 Timed Screenshot Capture  DEBUG      timedscreenshot.py        70    process_event User activity detected
+2018-02-09 13:49:45,736 Detailed Log Writer       DEBUG      detailedlogwriter.py      78    process_event loggable, lets log it. key: E
+2018-02-09 13:49:45,895 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Detailed Log Writer
+2018-02-09 13:49:45,895 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Timed Screenshot Capture
+2018-02-09 13:49:45,897 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Click Image Capture
+2018-02-09 13:49:45,898 Timed Screenshot Capture  DEBUG      timedscreenshot.py        70    process_event User activity detected
+2018-02-09 13:49:45,898 Click Image Capture       DEBUG      onclickimagecapture.py    102   process_event not a useful event: key down
+2018-02-09 13:49:45,898 Detailed Log Writer       DEBUG      detailedlogwriter.py      78    process_event loggable, lets log it. key: R
+2018-02-09 13:49:46,026 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Detailed Log Writer
+2018-02-09 13:49:46,028 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Timed Screenshot Capture
+2018-02-09 13:49:46,028 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Click Image Capture
+2018-02-09 13:49:46,032 Click Image Capture       DEBUG      onclickimagecapture.py    102   process_event not a useful event: key up
+2018-02-09 13:49:46,032 Detailed Log Writer       DEBUG      detailedlogwriter.py      78    process_event loggable, lets log it. key: R
+2018-02-09 13:49:46,032 Timed Screenshot Capture  DEBUG      timedscreenshot.py        70    process_event User activity detected
+2018-02-09 13:49:48,513 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Detailed Log Writer
+2018-02-09 13:49:48,513 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Timed Screenshot Capture
+2018-02-09 13:49:48,513 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Click Image Capture
+2018-02-09 13:49:48,517 Timed Screenshot Capture  DEBUG      timedscreenshot.py        70    process_event User activity detected
+2018-02-09 13:49:48,519 Detailed Log Writer       DEBUG      detailedlogwriter.py      78    process_event loggable, lets log it. key: Return
+2018-02-09 13:49:48,526 Click Image Capture       DEBUG      onclickimagecapture.py    102   process_event not a useful event: key down
+2018-02-09 13:49:48,585 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Detailed Log Writer
+2018-02-09 13:49:48,585 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Timed Screenshot Capture
+2018-02-09 13:49:48,585 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Click Image Capture
+2018-02-09 13:49:48,591 Timed Screenshot Capture  DEBUG      timedscreenshot.py        70    process_event User activity detected
+2018-02-09 13:49:48,591 Detailed Log Writer       DEBUG      detailedlogwriter.py      78    process_event loggable, lets log it. key: Return
+2018-02-09 13:49:48,592 Click Image Capture       DEBUG      onclickimagecapture.py    102   process_event not a useful event: key up
+2018-02-09 13:49:49,986 Detailed Log Writer       DEBUG      timerthreads.py           163   flush_log_write_buffer Flushing file write buffers.
+2018-02-09 13:49:50,292 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Detailed Log Writer
+2018-02-09 13:49:50,292 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Timed Screenshot Capture
+2018-02-09 13:49:50,292 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Click Image Capture
+2018-02-09 13:49:50,302 Timed Screenshot Capture  DEBUG      timedscreenshot.py        70    process_event User activity detected
+2018-02-09 13:49:50,302 Click Image Capture       DEBUG      onclickimagecapture.py    97    process_event Window: 0
+Window Handle: 
+Window's Process Name: noprocname
+Position: (1646, 13)
+MessageName: mouse left down
+
+2018-02-09 13:49:50,303 Click Image Capture       DEBUG      onclickimagecapture.py    122   capture_image [1186,0][1536,350]
+2018-02-09 13:49:50,375 Click Image Capture       INFO       onclickimagecapture.py    323   write_to_logfile 20180209|1349|C:\Program Files (x86)\Google\Chrome\Application\chrome.exe|329624|USER|Chrome Legacy Window|1536x864|613,109,60528562,mouse left down,20180209_134943_744000_C:\Program Files (x86)\Google\Chrome\Application\chrome.exe_USER.png 613,109,60528687,mouse left up,20180209_134943_863000_C:\Program Files (x86)\Google\Chrome\Application\chrome.exe_USER.png 
+2018-02-09 13:49:50,398 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Detailed Log Writer
+2018-02-09 13:49:50,398 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Timed Screenshot Capture
+2018-02-09 13:49:50,398 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Click Image Capture
+2018-02-09 13:49:50,400 Timed Screenshot Capture  DEBUG      timedscreenshot.py        70    process_event User activity detected
+2018-02-09 13:49:50,401 Click Image Capture       DEBUG      onclickimagecapture.py    97    process_event Window: 0
+Window Handle: 
+Window's Process Name: noprocname
+Position: (1646, 13)
+MessageName: mouse left up
+
+2018-02-09 13:49:50,401 Click Image Capture       DEBUG      onclickimagecapture.py    122   capture_image [1186,0][1536,350]
+2018-02-09 13:49:51,763 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Detailed Log Writer
+2018-02-09 13:49:51,763 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Timed Screenshot Capture
+2018-02-09 13:49:51,763 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Click Image Capture
+2018-02-09 13:49:51,765 Timed Screenshot Capture  DEBUG      timedscreenshot.py        70    process_event User activity detected
+2018-02-09 13:49:51,776 Click Image Capture       DEBUG      onclickimagecapture.py    97    process_event Window: 0
+Window Handle: 
+Window's Process Name: noprocname
+Position: (203, 1065)
+MessageName: mouse left down
+
+2018-02-09 13:49:51,776 Click Image Capture       DEBUG      onclickimagecapture.py    122   capture_image [28,514][378,864]
+2018-02-09 13:49:51,845 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Detailed Log Writer
+2018-02-09 13:49:51,845 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Timed Screenshot Capture
+2018-02-09 13:49:51,846 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Click Image Capture
+2018-02-09 13:49:51,849 Click Image Capture       DEBUG      onclickimagecapture.py    97    process_event Window: 0
+Window Handle: 
+Window's Process Name: noprocname
+Position: (203, 1065)
+MessageName: mouse left up
+
+2018-02-09 13:49:51,849 Timed Screenshot Capture  DEBUG      timedscreenshot.py        70    process_event User activity detected
+2018-02-09 13:49:51,851 Click Image Capture       DEBUG      onclickimagecapture.py    122   capture_image [28,514][378,864]
+2018-02-09 13:49:53,881 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Detailed Log Writer
+2018-02-09 13:49:53,882 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Timed Screenshot Capture
+2018-02-09 13:49:53,882 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Click Image Capture
+2018-02-09 13:49:53,884 Timed Screenshot Capture  DEBUG      timedscreenshot.py        70    process_event User activity detected
+2018-02-09 13:49:53,894 Click Image Capture       DEBUG      onclickimagecapture.py    97    process_event Window: 0
+Window Handle: 
+Window's Process Name: noprocname
+Position: (481, 1066)
+MessageName: mouse left down
+
+2018-02-09 13:49:53,894 Click Image Capture       DEBUG      onclickimagecapture.py    122   capture_image [306,514][656,864]
+2018-02-09 13:49:53,973 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Detailed Log Writer
+2018-02-09 13:49:53,974 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Timed Screenshot Capture
+2018-02-09 13:49:53,976 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Click Image Capture
+2018-02-09 13:49:53,980 Click Image Capture       DEBUG      onclickimagecapture.py    97    process_event Window: 0
+Window Handle: 
+Window's Process Name: noprocname
+Position: (481, 1066)
+MessageName: mouse left up
+
+2018-02-09 13:49:53,980 Timed Screenshot Capture  DEBUG      timedscreenshot.py        70    process_event User activity detected
+2018-02-09 13:49:53,980 Click Image Capture       DEBUG      onclickimagecapture.py    122   capture_image [306,514][656,864]
+2018-02-09 13:49:55,385 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Detailed Log Writer
+2018-02-09 13:49:55,387 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Timed Screenshot Capture
+2018-02-09 13:49:55,387 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Click Image Capture
+2018-02-09 13:49:55,394 Timed Screenshot Capture  DEBUG      timedscreenshot.py        70    process_event User activity detected
+2018-02-09 13:49:55,395 Click Image Capture       DEBUG      onclickimagecapture.py    97    process_event Window: 657308
+Window Handle: Chrome Legacy Window
+Window's Process Name: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Position: (1179, 104)
+MessageName: mouse left down
+
+2018-02-09 13:49:55,397 Click Image Capture       DEBUG      onclickimagecapture.py    122   capture_image [1004,0][1354,350]
+2018-02-09 13:49:55,484 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Detailed Log Writer
+2018-02-09 13:49:55,486 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Timed Screenshot Capture
+2018-02-09 13:49:55,486 Click Image Capture       INFO       onclickimagecapture.py    323   write_to_logfile 20180209|1349|noprocname|0|USER||1536x864|1646,13,60535171,mouse left down,20180209_134950_376000_noprocname_USER.png 1646,13,60535265,mouse left up,20180209_134950_467000_noprocname_USER.png 203,1065,60536640,mouse left down,20180209_134951_846000_noprocname_USER.png 203,1065,60536718,mouse left up,20180209_134951_918000_noprocname_USER.png 481,1066,60538750,mouse left down,20180209_134953_976000_noprocname_USER.png 481,1066,60538828,mouse left up,20180209_134954_39000_noprocname_USER.png 
+2018-02-09 13:49:55,486 root                      DEBUG      ResearchLogger.py         220   push_event_to_queues Sticking event into queue Click Image Capture
+2018-02-09 13:49:55,487 Click Image Capture       DEBUG      onclickimagecapture.py    300   process_event Error writing image to file
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\PracticaProfesional\TranslateKeylogger\Kit_ResearchLogger\ResearchLogger\onclickimagecapture.py", line 290, in process_event
+    image_data.save(savefilename, quality=qualitysetting)
+  File "C:\Python27\lib\site-packages\PIL\Image.py", line 1433, in save
+    fp = __builtin__.open(fp, "wb")
+IOError: [Errno 22] invalid mode ('wb') or filename: u'C:\\Users\\USER\\Desktop\\PracticaProfesional\\TranslateKeylogger\\Kit_ResearchLogger\\ResearchLogger\\logs-USER-1518205759\\click_images\\20180209_134955_486000_C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe_USER.png'
