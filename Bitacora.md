@@ -222,7 +222,7 @@
  ### Informa de Trabajo 
  
  + Se chequeó el error generado por el mixed_parser:
-    + Se concluye que, en el log, la falta de X,Y del mouse cuando se presiona una tecla es la causa de el fallo, ya que los separadores para comprender la información generar mal los datos si estos datos no estan.
+    + Se concluye que, en el log, la falta de X,Y del mouse cuando se presiona una tecla es la causa del fallo, ya que los separadores para comprender la información generar mal los datos si estos datos no estan.
     + Se compararón los log de windows y de ubuntu:
         + Los logs de ubuntu no generan el nombre de las pestañas de los navegadores.
     + Se descargo e instaló windows 7 en una maquina virtual esto para realizar pruebas con el researchlogger y ver si NO genera X,Y coomo en windows 10
@@ -243,4 +243,71 @@
  + Se intentó NO solicitar las variables x,y pero el script aún falla, realizando más investigación, se concluyó que los logs en windows se generan también con el siguiente error:
     + "key_down" y "key_up" no tiene la raya baja "_" por lo cual aparecen de la siguiente forma "key down" "key up"
  + Debido a todos estos problemas se optará por realizar un script en python que revise la estructura de los logs generados y que haga correciones si es necesario.
+ 
+ # Fecha 11 de Febrero del 2018
+ 
+ ### Requerimientos:
+  
+ - No aplica
+ 
+ ### Informa de Trabajo 
+ 
+ + No se trabajó por día Feriado.
+ 
+ # Fecha 12 de Febrero del 2018
+ 
+ ### Requerimientos:
+  
+ - No aplica
+ 
+ ### Informa de Trabajo 
+ 
+ + No se trabajó por día Feriado.
+ 
+ # Fecha 13 de Febrero del 2018
+ 
+ ### Requerimientos:
+  
+ - Reunión con supervisor de práctica profesional
+ 
+ ### Informa de Trabajo 
+ 
+ + Se realizó una reunión con Aurelio sanabria en la cual se expusieron dudas con respecto al proyecto de invesigación.
+ + Revisión de los logs, se propondrá la idea de realizar un Chequeador de scripts el cual verifique si cada uno de los espacios correspondientes al detailedlog son correctos.
+
+ # Fecha 14 de Febrero del 2018
+ 
+ ### Requerimientos:
+  
+ - Reunión con Paula estrella
+ - Consulta de Proyecto de investigación
+  
+ ### Informa de Trabajo 
+ 
+ + En FAMAF se llevó acabo una reunion en la cual se consulto la viabilidad actual del proyecto de investigación y dudas con respecto a desarrollo:
+    + Se acordo continuar con el rumbo actual del proyecto, ya que no afecta al cronograma ni a la extension del mismo
+    + Con respecto al desarrollo se simplifico la realización del scriptchecker, se acordo solo modificar los datos que estuvieran erroneos
+    + Se necesita chequear si es posible mostrar:
+        + Tiempo total de sesión
+        + Tiempo por herramienta
+        + Tiempo por recurso
+        + Combinaciones de teclas
+ + Se generó el script adminfile.py para manejo de archivos
+ + Se creó la función arranger la cual cambia en el detailedlog "key down" y "keyup" por "key_down" y "key_up" y genera un nuevo archivo con el identificador _new
+ + Una vez que se ejecutó el mixed_parser con el log modificado se descubrio que el archivo clickimagelogfile también posee un error simmilar en windows el cual es que "mouse left up" y "left_up" deben ser cambiados por "mouse left down" y "left_down", esto se realizó con exito y se logro ejecutar el mixed_parser
+ 
+ # Fecha 15 de Febrero del 2018
+ 
+ ### Requerimientos:
+  
+ - Reunión con Paula estrella
+  
+ ### Informa de Trabajo 
+ 
+ + Se llevó acábo una reunión por hangouts con Paula Estrella en dicha reunión se mencionó el avance actual.
+    + Se mencionó que el proyecto ResearchAnalyzer cuenta con una clase llamada LogInfo y que es necesario revisar dicha clase ya que contiene información que podría ser util para la investigación.
+    + Se necesita ejecutar main_example1.py y posteriormente ejecutar loginfo sobre los logs que genera windows.
+ + Se ejecutó con exito main_example1.py
+ + Se intentó ejecutar el script main_example1.py con los logs generados por windows, el resultado fueron diferentes errores que deben ser investigados.
+ 
  
