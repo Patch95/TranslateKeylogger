@@ -244,16 +244,6 @@
     + "key_down" y "key_up" no tiene la raya baja "_" por lo cual aparecen de la siguiente forma "key down" "key up"
  + Debido a todos estos problemas se optará por realizar un script en python que revise la estructura de los logs generados y que haga correciones si es necesario.
  
- # Fecha 11 de Febrero del 2018
- 
- ### Requerimientos:
-  
- - No aplica
- 
- ### Informa de Trabajo 
- 
- + No se trabajó por día Feriado.
- 
  # Fecha 12 de Febrero del 2018
  
  ### Requerimientos:
@@ -268,6 +258,16 @@
  
  ### Requerimientos:
   
+ - No aplica
+ 
+ ### Informa de Trabajo 
+ 
+ + No se trabajó por día Feriado.
+ 
+ # Fecha 14 de Febrero del 2018
+ 
+ ### Requerimientos:
+  
  - Reunión con supervisor de práctica profesional
  
  ### Informa de Trabajo 
@@ -275,7 +275,7 @@
  + Se realizó una reunión con Aurelio sanabria en la cual se expusieron dudas con respecto al proyecto de invesigación.
  + Revisión de los logs, se propondrá la idea de realizar un Chequeador de scripts el cual verifique si cada uno de los espacios correspondientes al detailedlog son correctos.
 
- # Fecha 14 de Febrero del 2018
+ # Fecha 15 de Febrero del 2018
  
  ### Requerimientos:
   
@@ -296,7 +296,7 @@
  + Se creó la función arranger la cual cambia en el detailedlog "key down" y "keyup" por "key_down" y "key_up" y genera un nuevo archivo con el identificador _new
  + Una vez que se ejecutó el mixed_parser con el log modificado se descubrio que el archivo clickimagelogfile también posee un error simmilar en windows el cual es que "mouse left up" y "left_up" deben ser cambiados por "mouse left down" y "left_down", esto se realizó con exito y se logro ejecutar el mixed_parser
  
- # Fecha 15 de Febrero del 2018
+ # Fecha 16 de Febrero del 2018
  
  ### Requerimientos:
   
@@ -309,28 +309,19 @@
     + Se necesita ejecutar main_example1.py y posteriormente ejecutar loginfo sobre los logs que genera windows.
  + Se ejecutó con exito main_example1.py
  + Se intentó ejecutar el script main_example1.py con los logs generados por windows, el resultado fueron diferentes errores que deben ser investigados.
- 
- # Fecha 16 de Febrero del 2018
+  
+ # Fecha 19 de Febrero del 2018
  
  ### Requerimientos:
-  
  - Ejecutar loginfo.py con los script de prueba en windows
+ - Verificar nuevo error encontrado en click_parser.py
   
- ### Informa de Trabajo 
- 
+ ### Informa de Trabajo
  - Se necesita averiguar por que el codigo al ejecutarse con los logs de windows falla durante la ejecución
  - A partir de varias pruebas que se ejecutaron con loginfo se concluye lo siguiente:
     - se necesita comprender de mejor manera la estructura de el ResearchAnalyzer, por lo que se realizó la lectura de la tesis de roxana reyes de la página 25 a la página 29
  - Se identifica que el script loginfo.py hace uso de otros scripts entre ellos click_parse.py el script que lanzaba el error, se concluye que la falta de x,y en los logs de detailed_log genera eel problema, se agrega -1 -1 como x,y en el log generado en windows esto para verificar si es posible que el codigo se ejecute.
  - Aun debe depurarse los logs ya que aún no se ejecuta el script.
- 
- # Fecha 19 de Febrero del 2018
- 
- ### Requerimientos:
-  
- - Verificar nuevo error encontrado en click_parser.py
-  
- ### Informa de Trabajo
  - Se creo el script windows_logs_test.py para pruebas de desarrollo:
     - Este script intenta inicializar una instancia de loginfo como en ejemplo de main_example1.py de ResearchAnalizer, aun genera un error.
     - En cuestiones de diseño es necesario que solo colocando las diferentes carpetas generadas por el research logger en un directorio se genere un informe por cada carpeta, por lo cual e creó la función load_loginfo, esta funcion realiza lo siguiente:
