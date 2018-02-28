@@ -353,3 +353,75 @@
  - Se forsó crear la instancia de phaseinfo pero se genero un error en la linea 53 del script phaseinfo.py aun se comprende dicho error.
  - Se terminó de simular con exito el main_example1.py con los logs de windows con excepción de los graficos la información si se puede obtener.
  - Se inicio con las pruebas en python para crear un archivo excell.
+ 
+ 
+ # Fecha 21 de Febrero del 2018
+ 
+ ### Requerimientos:
+  
+ - Reunión con el coordinador
+ - Reunión con Paula
+  
+ ### Informa de Trabajo
+ 
+ - Reunión semanal con el coordinador de practica profesional,Aurelio Sanabria.
+ - Se llevo acabo una reunion con Paula Estrella, en dicha reunión se trataron temas como:
+    - Posibles ideas para paper
+    - Estado actual de avance
+ - Se acuerda realizar las siguientes tareas:
+    - Lectura de paper Psycholinguistic Foundations of the Writing Process
+    - Depurar codigo para obtener aún más información necesaria a partir de los logs
+    - Investigar como realizar un piloto en procesos de programación
+    - Introducción con evidencia de autores
+    - Investigar que son los procesos de escritura
+    - Investigar terminos tecnicos de lo que se tiene como ideas
+  
+ # Fecha 22 de Febrero del 2018
+ 
+ ### Requerimientos:
+  
+ - Video llamada con Mariona
+ - Verificación de Tags
+
+  
+ ### Informa de Trabajo
+ 
+ - Se realizó una video llamada con Mariona Sabate y  con el técnico en computación, en dicha reunión se solucionaron los problemas de instalación que se tenía con el ResearchLogger.
+    - El primer problema se debía a que la biblioteca validate no se instalo correctamente, ya que las computadoras cuentan con dos usuarios, uno administrador, por lo que el script que genera las variables de ambiente en el momento de la solicitud de permisos de superusuario no funcionó correctamente.
+    - El segundo problema que se encontro fue que en el momento de mover la carpeta ResearchLogger a la dirección C:\ResearchLogger se solicitan permisos de superusuario y la carpeta se mueve con estos permisos por lo cual la carpeta no era visible para todos los usuarios solo para el usuario administrador, se resolvio volver a descomprimir el kitResearchLogger y mover la carpeta manualmente.
+ - Con ayuda de Jose Roberto Arguedas, se verifico el nombre de la ciertas teclas especiales como enter o delete, cual es el nombre que se genera para ellas en ubuntu y cual en windows, se agregaron a la función arranger de scriptchecker.py
+ 
+ 
+  # Fecha 23 de Febrero del 2018
+ 
+ ### Requerimientos:
+  
+ - Lectura paper Psycholinguistic Foundations of the Writing Process
+  
+ ### Informa de Trabajo
+ 
+ - Se incio con la lectura del paper se tomaron apuntes escritos y apuntes en documento de texto, la lectura posee muchos terminos tecnicos y se encuentra escrita en ingles, también contiene explicaciónes de estructuras gramaticales en ingles por lo que requiere de mas tiempo de comprensión e investigación.
+ - También se realizó la lectura del la tesis de Roxana La Fuente no enfocado en código y diseño de código
+ 
+  # Fecha 26 de Febrero del 2018
+ 
+ ### Requerimientos:
+  
+ - Lectura paper Psycholinguistic Foundations of the Writing Process
+ - Generar boceto de Excell
+  
+ ### Informa de Trabajo
+ 
+ - 
+ - 
+ 
+  # Fecha 27 de Febrero del 2018
+ 
+ ### Requerimientos:
+  
+ - Generar boceto de Excell
+ - Realizar manual de uso de ResearchLogger
+  
+ ### Informa de Trabajo
+ 
+ - S
