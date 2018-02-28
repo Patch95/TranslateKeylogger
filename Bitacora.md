@@ -402,6 +402,7 @@
  
  - Se incio con la lectura del paper se tomaron apuntes escritos y apuntes en documento de texto, la lectura posee muchos terminos tecnicos y se encuentra escrita en ingles, también contiene explicaciónes de estructuras gramaticales en ingles por lo que requiere de mas tiempo de comprensión e investigación.
  - También se realizó la lectura del la tesis de Roxana La Fuente no enfocado en código y diseño de código
+ - Se obtuvo el tiempo total de la sesión mediante la resta del ultimo tiempo obtenido, ya sea de click o de tecla presionada, menos el primer tiempo obtenido.
  
   # Fecha 26 de Febrero del 2018
  
@@ -412,8 +413,16 @@
   
  ### Informa de Trabajo
  
- - 
- - 
+ - Se terminó con la lectura del paper.
+ - Se realizó una comparación entre el tiempo total obtenido mediante la resta y el tiempo total que se genera a partir del uso de la función get_time_by_active_window().
+    - Los tiempos no coinciden, se decidio trabajar con el tiempo total que se genera mediante la función.
+ - Se inició con la generación del archivo excel a partir de la información previamente obtenida con el research logger.
+    - Se creó la función generate data
+    - Para cada carpeta se generó un archivo de excel:
+        - El nombre de este archivo tiene el siguiente formato Analysis_Usuario_id.xlsx
+        - Cada archivo cuenta con 1 worksheet (hoja de trabajo) GeneralInfo
+        
+ 
  
   # Fecha 27 de Febrero del 2018
  
@@ -424,4 +433,47 @@
   
  ### Informa de Trabajo
  
- - S
+ - Se continuó con la generación del excel, se agrego 2 worsheets (hojas de trabajo) al archivo excel, ClicksInfo, KeysInfo
+ - Durante el día se recibieron varios correos de Mariona sabate los cuales se adjunta a continuación:
+```
+Hola Walter,
+
+El lunes de la semana que viene vamos a hacer la primera actividad con los
+alumnos con el keylogger. Para ello, me gustaría hacer un par de pruebas,
+una en mi ordenador (donde ya está instalado el keylogger) y una desde un
+ordenador de la sala 3.48 (donde ya está instalado en todos los
+ordenadores el keylogger).
+
+¿Puedes darme instrucciones de cómo activar el keylogger? Una vez haya
+hecho la prueba en mi ordenador, podemos hacer un teamviewer y puedes
+comprobar dónde están los documentos generados por la traducción.
+
+Después, podemos hacer una prueba desde la 3.48 utilizando también
+teamviewer.
+
+Por favor, indícame tu disponibilidad de días y horas, para calcular la
+hora española teniendo en cuenta la diferencia horaria de 4 horas.
+
+Gracias por todo,
+ona
+```
+```
+ Hola Walter,
+
+Te envio el documento con las instrucciones (instrucciones.doc) que pasaré
+a los alumnos para la sesión de la semana que viene.
+
+¿Podrías aclararme los fragmentos que he resaltado en color rojo? Gracias
+ona
+```
+```
+Hola Walter,
+
+Otra vez yo. He hablado con los informáticos (Roger y Pascal) y me han
+dicho que podríamos tener la sesión mañana miércoles a las 13:30 en España
+(9:30 en Argentina). Qué tal?
+ona
+```
+- Dados los anteriores correos se le contesto a Mariona Sabata:
+    - Se accede a tener la reunión el día y la hora indicadas por ella.
+    - Se realizo un manual el cual indica como activar el ResearchLogger y como verificar que este funciona correctamente.
