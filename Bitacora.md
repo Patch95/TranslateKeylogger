@@ -392,7 +392,7 @@
  - Con ayuda de Jose Roberto Arguedas, se verificó el nombre de la ciertas teclas especiales como enter o delete, cual es el nombre que se genera para ellas en ubuntu y cual en windows, se agregaron a la función arranger de scriptchecker.py
  
  
-  # Fecha 23 de Febrero del 2018
+ # Fecha 23 de Febrero del 2018
  
  ### Requerimientos:
   
@@ -404,7 +404,7 @@
  - También se realizó la lectura del la tesis de Roxana La Fuente no enfocado en código y diseño de código
  - Se obtuvo el tiempo total de la sesión mediante la resta del último tiempo obtenido, ya sea de click o de tecla presionada, menos el primer tiempo obtenido.
  
-  # Fecha 26 de Febrero del 2018
+ # Fecha 26 de Febrero del 2018
  
  ### Requerimientos:
   
@@ -417,14 +417,16 @@
  - Se realizó una comparación entre el tiempo total obtenido mediante la resta y el tiempo total que se genera a partir del uso de la función get_time_by_active_window().
     - Los tiempos no coinciden, se decidió trabajar con el tiempo total que se genera mediante la función.
  - Se inició con la generación del archivo excel a partir de la información previamente obtenida con el research logger.
+    - Se utilizó la biblioteca xlxswrite:
+        - https://pypi.python.org/pypi/XlsxWriter/
     - Se creó la función generate data
     - Para cada carpeta se generó un archivo de excel:
         - El nombre de este archivo tiene el siguiente formato Analysis_Usuario_id.xlsx
         - Cada archivo cuenta con 1 worksheet (hoja de trabajo) GeneralInfo
-        
+
  
  
-  # Fecha 27 de Febrero del 2018
+ # Fecha 27 de Febrero del 2018
  
  ### Requerimientos:
   
@@ -477,3 +479,67 @@ ona
 - Dados los anteriores correos se le contestó a Mariona Sabata:
     - Se accede a tener la reunión el día y la hora indicadas por ella.
     - Se realizó un manual el cual indica como activar el ResearchLogger y como verificar que este funciona correctamente.
+    
+ # Fecha 28 de Febrero del 2018
+ 
+ ### Requerimientos:
+ 
+ - Reunión con Mariona Sabate
+ - Reunión con el coordinador de practica profesional Costa Rica
+  
+  
+ ### Informa de Trabajo
+ 
+ - Se llevó acabo la reunión con Mariona Sabate:
+    - Se le explicó como ejecutar paso a paso el researchlogger, con o sin interfaz.
+    - Se explicó como verificar si el researchlogger funciona correctamen.
+    - Se hizo uso de skype para llevar a cabo la reunión y de teamviwer para mejor comprensión de los pasos a seguir
+ - Se llevó a cabo la reunión semanal con Aurelio Sanabria, se trataron temas como:
+    - Estado actual de la investigación
+    - Situación actual en Argentina
+ - Se continuó pensando en como generar un boceto de información en excell. 
+ 
+ # Fecha 01 de Marzo del 2018
+ 
+ ### Requerimientos:
+  
+ - Generación de archivo excell
+ - Lectura de "An Online System for Monitoring and Assessing the Programming Process"
+ 
+  
+ ### Informa de Trabajo
+ 
+ - Actualmente el script windows_logs_test.py cuentaa con las siguiente funciones:
+    - load_loginfo(): Función que revisa la carpeta logs_to_treat y con el scrpitchecker genera para cada registro de logs los nuevos archivos de logs para cada carpeta, también inicializa la instancia de loginfo para cada registro de log.
+    - total_session_time(): Función que obtiene el tiempo total de la sesión mediante la resta del ultimo tiempo registrado menos el primer tiempo registrado, actualmente no se hace uso de esta función.
+    - generate_click_info(li, workbook, addname): Función que imprime información extraida con loginfo con respectto a los clicks, se filtraron por evento down.
+    - generate_key_info(li, workbook, addname): Función que imprime información extraida con loginfo con respectto a los eventos de teclado, se filtraron por evento down.
+    - generate_separate_data(): Función que se encarga de generar un archivo excel por cada carpeta en logs_to_treat
+ - Actualmente se genera un archivo excel por cada carpeta,
+    - Se modificaron las fuciones print_click_summary() y print_key_summary() para que no solo imprimieran los datos sino que los retornaran, esto para trabajar con los datos y no realizar modificaciones mayores en loginfo.py
+    - El nombre del archivo se construye de la siguiente forma, Analysis_Usuario_ID.xlsx, ejemplo:
+        - Analysis_walter_1518136283.xlsx
+    - Cada archivo tiene una hoja con información y datos generales
+    - Una hoja con la información de los click obtenida a partir de loginfo.py
+    - Una hoja con la información de las  teclas obtenida a partir de loginfo.py
+    - Se procederá a generar un archivo excel, "United_Analysis.xlsx", que contenga los datos generales de cada carpeta en una solo hoja para asi realizar graficos basados en el excel "Análisis Traducción Técnica"
+    - Se realizó la lectura del paper "An Online System for Monitoring and Assessing the Programming Process"
+ 
+ # Fecha 02 de Marzo del 2018
+ 
+ ### Requerimientos:
+  
+ - Generar archivo United_Analysis.xlsx
+ - Investigación procesos de escritura
+ - Investigación procesos de programación
+ 
+ ### Informa de Trabajo
+ 
+ -  United_Analysis.xlsx, se agregó al script windows_logs_test.py las funciones:
+    - generate_full_data(): Función que se encarga de crear el archivo excel, escribe la información general de cada carpeta en una sola hoja
+    - generate_total_plot(workbook, worksheet, usersamount): Genera un gráfico que compara los usuarios por tiempo total de sesión.
+ - Procesos de escritura se investigó hasta encontrar el siguiente link:
+    - https://cmsw.mit.edu/writing-and-communication-center/resources/writers/writing-process/
+ - Procesos de programación se investigó y por recomendación de Msc.Kevin Moraga se sugiere leer.
+    - La catedral y el bazar
+    
