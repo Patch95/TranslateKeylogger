@@ -160,17 +160,20 @@ class LogInfo:
             click_type, pt, rt, tt, dx, dy, ux, uy = click
             esp += tt
             var += tt * tt
-            print tt
+            #print tt
         esp = esp / float(click_amount)
         var = (var/float(click_amount))-(esp*esp)
         # Prints results.
-        print "*** RESUMEN DE CLICKS ***"
+        """print "*** RESUMEN DE CLICKS ***"
         print "Cantidad total de clicks:", colored(click_amount, 'blue')
         print "Ventanas en las cuales se hacen clicks:", list(windows)
         print "Tipos de clicks usados:", list(self.get_unique_pressed_clicks())
         print "Tiempo de presión de click promedio:", colored(esp, 'blue')
         print "Varianza en la presión de click:", colored(var, 'blue')
-        print "Desviación estándar en la presión de click:", colored(sqrt(var), 'blue')
+        print "Desviación estándar en la presión de click:", colored(sqrt(var), 'blue')"""
+
+        #return results
+        return [click_amount, list(windows), list(self.get_unique_pressed_clicks()), esp, var, sqrt(var)]
 
     def get_unique_pressed_keys(self):
         """
@@ -330,7 +333,7 @@ class LogInfo:
         esp = esp / float(key_amount)
         var = (var / float(key_amount)) - (esp * esp)
         # Print results
-        print "*** RESUMEN DE TECLAS ***"
+        """print "*** RESUMEN DE TECLAS ***"
         print "Cantidad de teclas presionadas:", colored(key_amount, 'blue')
         print "Teclas únicas presionadas:", list(self.get_unique_pressed_keys())
         print "Ventanas donde se esribió:", list(windows)
@@ -340,7 +343,11 @@ class LogInfo:
         print "Teclas de función usadas:", list(function_keys)
         print "Patrones de borrado usados:", list(erase_keys)
         print "Teclas de movimiento usadas:", list(move_keys)
-        print "Combos de teclas usados:", list(combos)
+        print "Combos de teclas usados:", list(combos)"""
+
+        #return results
+        return [key_amount, list(self.get_unique_pressed_keys()), list(windows), esp, var, sqrt(var),
+                list(function_keys), list(erase_keys), list(move_keys), list(combos)]
 
     def get_orientation_info(self):
         """
@@ -570,3 +577,8 @@ class LogInfo:
             _ , _, _, _, _, _, x, y = click
             self.mark_click(int(x), int(y), r, g, b)
         img.show()
+
+    # Funciones agregadas
+
+    def get_mixed_parser(self):
+        return self.mixed_parser
