@@ -497,6 +497,9 @@ ona
  - Se llevó a cabo la reunión semanal con Aurelio Sanabria, se trataron temas como:
     - Estado actual de la investigación
     - Situación actual en Argentina
+    - Se me solicitó comenzar a redactar documentos formales que requiere el Tecnológico de Costa Rica durante la práctica profesional:
+        - Informes semanales de trabajo con un formato particular.
+        - Primer Informe general con un formato particular.
  - Se continuó pensando en como generar un boceto de información en excell. 
  
  # Fecha 01 de Marzo del 2018
