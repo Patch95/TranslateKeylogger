@@ -546,3 +546,76 @@ ona
  - Procesos de programación se investigó y por recomendación de Msc.Kevin Moraga se sugiere leer.
     - La catedral y el bazar
     
+# Fecha 05 de Marzo del 2018
+ 
+ ### Requerimientos:
+  
+ - No aplica
+ 
+ ### Informa de Trabajo
+ 
+ - No se trabajó por problemas con la conexión a internet y problemas con la electricidad.
+ 
+ # Fecha 06 de Marzo del 2018
+ 
+ ### Requerimientos:
+  
+ - Lectura del documento la catedral y el bazar
+ - Añadir funcionalidades al archivo United_Analysis.xlsx
+ 
+ ### Informa de Trabajo
+ - Se comenzó con la lectura la catedral y el bazar, actualmente falta leer la mitad del document
+ - United_Analysis.xlsx, se agregó al script windows_logs_test.py las funciones:
+    - generate_resources_plot(workbook, worksheet, users, resourcesamount): Genera un gráfico que compara los usuarios por tiempo en recurso.
+    - Se agregaron modificaciones a la función generate_full_data(), esto para lograr acomodar los datos que utilizará la función generate_resources_plot.
+    - Actualmente se generan errores de impresion de datos.
+  
+ 
+ # Fecha 07 de Marzo del 2018
+ 
+ ### Requerimientos:
+  
+ - Terminar lectura la catedral y el bazar
+ - Lectura An Online System for Monitoring and Assessing the Programming Process
+ - Analisis y depuración de codigo actual
+ - Realizar los Informes Semalanes
+ 
+ ### Informa de Trabajo
+ 
+ - Se terminó con la lectura la catedral y el bazar, se concluye que tiene un minimo de relevancia para el proyecto.
+ - Se realizó la lectura An Online System for Monitoring and Assessing the Programming Process, se concluye que es de gran relevancia para el proyecto
+ - Se corrigieron los errores de impresión se primera etapa de representación de información generada por ResearchLogger.
+ - Se hizo de mi conocimiento que se necesita entregar informes de avances semanales, por lo que se debe realizar los primeros 6 informes de las semanas anteriores, actualmentes se han realizado estos informes y se encuentran en un documento compartido.
+ 
+ # Fecha 08 de Marzo del 2018
+ 
+ ### Requerimientos:
+ 
+ - Reunión con Mariona Sabaté
+ - Reunión con tutora de proyecto Argentina
+ - Continuar el borrador del Primer Informe
+ 
+ ### Informa de Trabajo
+ 
+ - Mariona Sabaté solicitó una reunión por video llamada para verificar que la prueba que ella realizó con sus alumnos fue exitosa, ella no ejecuto el script researchlogger.py por lo cual la sesión de traducción no se grabo, solo obtuvo un volcado del archivo generado por los traductores.
+ - Se llevó a cabo una reunión en FAMAF con Paula estrella:
+    - Se habló del estado actual de los script, se necesita agregar una reconstruccion de palabras por herramienta al aaarchivo excel.
+    - Se hablo de las bibliografias encontradas y leidas, se acordó se buscarian mas bibliografias con relación a visualización de la información.
+    - Se aclaró que realizar un piloto es testear el software ResearchLogger con estudiantes de ingeniería en computación y posteriormente analizar los datos con el script windows_logs_test.py.
+    - Se necesita cambiar el nombre del script windows_logs_test.py.
+    - Se hizo de mi conocimiento que se necesita entregar un informe general que describa aspectos de la practica profesional, actualmentes se ha realizado este informe y se encuentra en un documento compartido.
+ 
+ # Fecha 09 de Marzo del 2018
+ 
+ ### Requerimientos:
+  
+ - Reunión con el coordinador de proyecto
+ 
+ ### Informa de Trabajo
+ 
+ - Se llevó a cabbo una reunión con Aurelio Sanabria:
+    - Se consulto acerca del "norte" del proyecto, se corrigió y se analizó el mismo.
+    - Se revisó el primer informe el cual se acuerda realizar correcciones.
+    - Se solicitó entregar los informes semanales por separado en formato pdf.
+    - Se solicitó redactar minuta de la reunión de la semana pasada y de esta reunión, tambien se acordó realizar minutas de las reunniones con Aurelio Sannabria apartir de la presente fecha.
+    
