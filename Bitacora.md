@@ -599,11 +599,11 @@ ona
  
  - Mariona Sabaté solicitó una reunión por video llamada para verificar que la prueba que ella realizó con sus alumnos fue exitosa, ella no ejecuto el script researchlogger.py por lo cual la sesión de traducción no se grabo, solo obtuvo un volcado del archivo generado por los traductores.
  - Se llevó a cabo una reunión en FAMAF con Paula estrella:
-    - Se habló del estado actual de los script, se necesita agregar una reconstruccion de palabras por herramienta al aaarchivo excel.
+    - Se habló del estado actual de los script, se necesita agregar una reconstruccion de palabras por herramienta al archivo excel.
     - Se hablo de las bibliografias encontradas y leidas, se acordó se buscarian mas bibliografias con relación a visualización de la información.
     - Se aclaró que realizar un piloto es testear el software ResearchLogger con estudiantes de ingeniería en computación y posteriormente analizar los datos con el script windows_logs_test.py.
     - Se necesita cambiar el nombre del script windows_logs_test.py.
-    - Se hizo de mi conocimiento que se necesita entregar un informe general que describa aspectos de la practica profesional, actualmentes se ha realizado este informe y se encuentra en un documento compartido.
+ - Se hizo de mi conocimiento que se necesita entregar un informe general que describa aspectos de la practica profesional, actualmentes se ha realizado este informe y se encuentra en un documento compartido.
  
  # Fecha 09 de Marzo del 2018
  
@@ -617,5 +617,5 @@ ona
     - Se consulto acerca del "norte" del proyecto, se corrigió y se analizó el mismo.
     - Se revisó el primer informe el cual se acuerda realizar correcciones.
     - Se solicitó entregar los informes semanales por separado en formato pdf.
-    - Se solicitó redactar minuta de la reunión de la semana pasada y de esta reunión, tambien se acordó realizar minutas de las reunniones con Aurelio Sannabria apartir de la presente fecha.
+    - Se solicitó redactar minuta de la reunión de la semana pasada y de esta reunión, tambien se acordó realizar minutas de las reuniones con Aurelio Sannabria apartir de la presente fecha.
     
