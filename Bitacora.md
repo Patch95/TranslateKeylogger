@@ -619,3 +619,96 @@ ona
     - Se solicitó entregar los informes semanales por separado en formato pdf.
     - Se solicitó redactar minuta de la reunión de la semana pasada y de esta reunión, tambien se acordó realizar minutas de las reuniones con Aurelio Sannabria apartir de la presente fecha.
     
+  # Fecha 12 de Marzo del 2018
+ 
+ ### Requerimientos:
+  
+ - Redactar minuta de la reunión de las semanas 6 y 7.
+ - Realizar Correcciones al Primer Informe para el Tecnológico de Costa Rica.
+
+ 
+ ### Informa de Trabajo
+ 
+ - Se realizaron las correcciones al Primer informe:
+    - Se agregó un índice
+    - Se agregó todo lo relacionado con el "norte" de la investigación
+    - Se le agrregó al contexto del proyectto una sección acerca del convenio TEC - (FAMaF- UNC)
+    - Se agrego la metodología y los modelos conceptuales
+ - Se realizarón la minutas de las semanas 6 y 7, se espera aprovación de las mismas.
+    
+ 
+ # Fecha 13 de Marzo del 2018
+ 
+ ### Requerimientos:
+  
+ - Agregar una reconstrucción de palabras por herramienta al archivo excel.
+ 
+ ### Informa de Trabajo
+ 
+ - Se agrego un worksheet al excel:
+    - Nombre se asigna de la siguiente forma Textinfo_{USER}_{id}
+    - Por cada recurso que exista, no importa si es de la misma ventana, se imprimira en un cuadro los keys sin filtrar de algún modo.
+    - Posteriormente en un cuadro diferente se mostrara una reconstruccion parcial de texto.
+ - Se creó el archivo constants_analysis_value.py en el se ecuentra un hash el cual se utilizara para la reconstrucción parcial, cambia las teclas speciles por su equivalente.
+    - return se cambia por \\n
+ - Se creó la función generate_words_reconstruction:
+    - Se encarga de imprimir generar y imprimir en el excel los keys iniciales y el texto reconxtruido.
+    - Se realizó la impresión del los keys sin modificar.
+     
+   
+ 
+ 
+ # Fecha 14 de Marzo del 2018
+ 
+ ### Requerimientos:
+  
+ - Continuar la reconstrucción de palabras por herramienta al archivo excel.
+ 
+ ### Informa de Trabajo
+- Se resuelve que filtrar por down en la funcion generate_key_info no es viable, ya que se necesita tener key_up para realizar las combinaciones de las teclas
+- Se modificó la función generate_key_info para que ya no filtre los keys
+- Se creó la funcion get_combos:
+    - Se encarga de encontrar todas las combinaciones de teclas que haya en el log
+    - Algortimo:
+        - Se inicialmete toma cada key excepto letras
+        - Se coleccionan todos los key a continuación encontrados hasta que se encuentre el up del key inicial
+        - De los keys coleccionados se ignora el up ya que no hace falta tomarlo en cuenta, esto asegura que se guarden todas las combinaciones especiales de dos o más teclas.
+ - Se imprime con exito la reconstrucción parcial de texto.
+ 
+ # Fecha 15 de Marzo del 2018
+ 
+ ### Requerimientos:
+  
+ - Relizar simulacro de piloto de software
+ 
+ ### Informa de Trabajo
+ 
+ - Se creó una maquina virtual de windows 7.
+ - Se instaló todo lo necesario para realizar el piloto de software.
+ - Se quiere realizar el siguiente piloto:
+    - Generar un lista de 10 elementos que contenga numeros generados aleatoriamente.
+ - Supuestos del piloto:
+    - En caso de querer realizar una consulta en web SE PUEDE UTILIZAR SOLO google chrome.
+    - Se tiene que utilizar el idle de python.
+    - Antes de inicializar el researchlogger se debe haber guardado el archivo con el nombre del estudiante walter.py en este caso.
+ - Se realizó el piloto con exito
+ - Se tomó la carpeta generada y se intento realizar el excel con dicha información
+ - Se generó el siguiente erro
+    ```
+    Ha ocurrido un error fatal. El log no tiene el formato deseado.
+    ```
+    - Error generado por la clase loginfo.py
+ 
+ # Fecha 16 de Marzo del 2018
+ 
+ ### Requerimientos:
+  
+- Reunión con tutora de proyecto Argentina
+ 
+ ### Informa de Trabajo
+ 
+ - Se mostró la reconstrucción parcial del texto, que está separado por recurso utilizado.
+ - Se expuso el error encontrado con la realización del log, el cual debe ser visto en una reunión presencial.
+ - También se concluye realizar el mismo piloto en un live cd de ubuntu y en una maquina que tenga como sistema operativo windows 7.
+
+    
