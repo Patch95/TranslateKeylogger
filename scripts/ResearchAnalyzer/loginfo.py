@@ -121,6 +121,7 @@ class LogInfo:
         pc = {}  # Pending_clicks
         for click in self.clicks_parser.clicks:
             date, time, pn, user, wid, title, ms, msg, x, y, res, img = click
+            #print msg
             ct, msg = msg.split('_')  # click_type and message
             if msg == DOWN:
                 if ct not in pc:
@@ -131,6 +132,7 @@ class LogInfo:
                     ct, pt, rt, tt, dx, dx, ux, ux = pc.pop(ct)
                     pc[ct] = [ct, pt+[ms], None, None, dx+[x], dx+[y], None, None]
             else:  # It's an UP msg
+                #print ct
                 if ct not in pc:
                     msg = "Ha ocurrido un error fatal. "
                     msg += "El log no tiene el formato deseado."
@@ -254,6 +256,7 @@ class LogInfo:
             kd[ms] = key_struct
         pk = {}
         for kwd in keywds:
+            #print kd[kwd]
             date, time, pn, user, wid, title, ms, key, msg, x, y = kd[kwd]
             if msg == KDOWN:
                 if key not in pk:

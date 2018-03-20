@@ -19,6 +19,7 @@ def arranger(detailed_log_path, click_images_log_path):
     keysfile = keysfile.replace("Capital", "'mayus'")
 
 
+
     pipe = 0
     comma = 0
     keysfile_adds = ""

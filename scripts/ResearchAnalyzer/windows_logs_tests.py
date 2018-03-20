@@ -8,7 +8,7 @@ from loginfo import LogInfo
 import os
 import scriptchecker
 import xlsxwriter
-
+from constants_analysis_value import *
 
 path = os.getcwd() + "\logs_to_treat\\"
 
@@ -48,6 +48,7 @@ def load_loginfo():
             exit()
 
         if clickbool and detailedbool:
+            print "h"
             scriptchecker.arranger(keys_fn, click_fn)
         keys_fn_new = keys_fn.replace(".txt", "_new.txt")
         click_fn_new = click_fn.replace(".txt", "_new.txt")
@@ -86,6 +87,7 @@ def load_loginfo():
 def total_session_time():
 
     for li in listLogInfo:
+        print "h"
         mp = li.get_mixed_parser()
         merged = mp.get_merged()
         firts = False
@@ -124,10 +126,16 @@ def get_info_of_list(dataList):
     if dataList.__len__() == 0:
         return ""
     else:
-        strtemp = dataList[0]
+        strtemp = str(dataList[0])
+        if strtemp.__contains__(".exe"):
+            strtemp = generate_key_name(str(strtemp))
         for x in range(1, dataList.__len__()):
             data = dataList[x]
-            strtemp += ", " + str(data)
+            if str(data).__contains__(".exe"):
+                strtemp += ", " + generate_key_name(str(data))
+            else:
+                strtemp += ", " + str(data)
+
         return strtemp
 
 
@@ -167,29 +175,138 @@ def generate_click_info(li, workbook, addname):
     worksheet2.write("B7", float(click_sumary[5]))
 
     # Write some simple text.
-    worksheet2.write('C9', 'X', myformat)
-    worksheet2.write('D9', 'Y', myformat)
-    worksheet2.write('E9', 'Resolucion', myformat)
-    worksheet2.write('F9', 'Tipo de Click', myformat)
-    worksheet2.write('G9', 'MSG', myformat)
-    worksheet2.write('H9', 'Nombre de programa', myformat)
-    worksheet2.write('I9', 'Titulo', myformat)
+    worksheet2.write('C10', 'X', myformat)
+    worksheet2.write('D10', 'Y', myformat)
+    worksheet2.write('E10', 'Resolucion', myformat)
+    worksheet2.write('F10', 'Tipo de Click', myformat)
+    worksheet2.write('G10', 'MSG', myformat)
+    worksheet2.write('H10', 'Nombre de programa', myformat)
+    worksheet2.write('I10', 'Titulo', myformat)
 
     up = 0
     all_pressed_clicks = li.get_all_pressed_clicks()
     for x in range(0, all_pressed_clicks.__len__()):
         pressed_click = all_pressed_clicks[x]
-        ind = str(10 + x - up)
+        ind = str(11 + x - up)
         if pressed_click[4] == "down":
             worksheet2.write("C" + ind, int(pressed_click[0]))
             worksheet2.write("D" + ind, int(pressed_click[1]))
             worksheet2.write("E" + ind, pressed_click[2])
             worksheet2.write("F" + ind, pressed_click[3])
             worksheet2.write("G" + ind, pressed_click[4])
-            worksheet2.write("H" + ind, pressed_click[5])
+            if pressed_click[5].__contains__(".exe"):
+                worksheet2.write("H" + ind, generate_key_name(pressed_click[5]))
+            else:
+                worksheet2.write("H" + ind, pressed_click[5])
             worksheet2.write("I" + ind, pressed_click[6])
         else:
             up += 1
+
+
+# get combos and filter per dowm
+def get_combos(all_keys):
+    # CTRL + KEY combos
+    # Eg. CTRL + V, CTRL + C, etc
+    new_text = []
+
+    combo = ""
+    combing = False
+    found_key = None
+    for k in range(0, all_keys.__len__()):
+        key = all_keys[k]
+        keystroke = key[2]
+        event_type = key[3]
+
+        if event_type == 'down' and not combing and keystroke.__len__() > 1:
+            combo += keystroke
+            found_key = keystroke
+            combing = True
+        elif event_type == 'down' and keystroke != combo and combing:
+            combo += "+"+keystroke
+        elif event_type == 'down' and keystroke == combo and combing:
+            pass
+        elif event_type == 'up' and combing and keystroke == found_key:
+            new_text.append(combo)
+            combing = False
+            combo = ""
+            found_key = None
+        elif event_type != 'up':
+            new_text.append(keystroke)
+    return new_text
+
+
+def generate_words_reconstruction(all_keys, workbook, addname):
+    keys_per_title = []
+    temp_list = [all_keys[0]]
+    i = 1
+    all_keys.__delitem__(0)
+    for pair in all_keys:
+        if temp_list[i-1][1] == pair[1]:
+            temp_list.append(pair)
+            i += 1
+        else:
+            keys_per_title.append(temp_list)
+            temp_list = [pair]
+            i = 1
+    keys_per_title.append(temp_list)
+
+    bold = workbook.add_format({'bold': True})
+    myformat = workbook.add_format({'bold': True})
+    myformat.set_align('center')
+    myformat.set_align('vcenter')
+    wrapformat = workbook.add_format()
+    wrapformat.set_text_wrap()
+
+    name = "Textinfo_" + addname
+    worksheet = workbook.add_worksheet(name)
+
+    worksheet.set_column('A:C', 30)
+    worksheet.merge_range("A1:C1", "Teclas por ventana", myformat)
+
+    index = 3
+    i = 0
+    # genarate text per down
+    for lot in keys_per_title:
+        original_text = ""
+        worksheet.write("A" + str(index + (11 * i)), "Recurso y Herramienta:", bold)
+        worksheet.write("B" + str(index + (11 * i)), lot[0][0])
+        worksheet.write("C" + str(index + (11 * i)), lot[0][1])
+        for k in range(0, lot.__len__()):
+            key = lot[k]
+            if key[3] != 'up':
+                if key[2].__len__() == 1:
+                    original_text += key[2]
+                else:
+                    original_text += " \"" + key[2] + "\" "
+        worksheet.merge_range("A" + str((index + 1) + (11 * i)) + ":C" + str((index + 4) + (11 * i)), original_text, wrapformat)
+        i += 1
+
+    index = 3
+    i = 0
+    # generate modificated text
+    for lot in keys_per_title:
+        l_changed_text = get_combos(lot)
+        changed_text = ""
+
+        for x in range(0, l_changed_text.__len__()):
+            key = l_changed_text[x]
+            try:
+                l_changed_text[x] = REPLACE_KEYS[key]
+            except:
+                l_changed_text[x] = key
+
+        for x in range(0, l_changed_text.__len__()):
+            key = l_changed_text[x]
+            if key.__len__() > 1:
+                changed_text += " \"" + key + "\""
+            elif x != 0 and l_changed_text[x-1].__len__() > 1:
+                changed_text += " " + key
+            else:
+                changed_text += key
+
+        worksheet.merge_range("A" + str((index + 6) + (11 * i)) + ":C"
+                              + str((index + 9) + (11 * i)), changed_text, wrapformat)
+        i += 1
 
 
 def generate_key_info(li, workbook, addname):
@@ -203,7 +320,7 @@ def generate_key_info(li, workbook, addname):
     name = "KeysInfo_" + addname
     worksheet3 = workbook.add_worksheet(name)
     worksheet3.set_column('A:B', 35)
-    worksheet3.set_column('C:F', 25)
+    worksheet3.set_column('C:D', 15)
 
     key_sumary = li.print_key_summary()
     worksheet3.merge_range("A1:B1", "Resumen de Teclas", myformat)
@@ -233,6 +350,7 @@ def generate_key_info(li, workbook, addname):
     strTemp = get_info_of_list(key_sumary[8])
     worksheet3.write("B10", strTemp)
 
+    # repetitions ctrl elimination
     if key_sumary[9].__len__() == 0:
         strTemp = ""
     else:
@@ -242,24 +360,45 @@ def generate_key_info(li, workbook, addname):
             strTemp += ", " + key_list[0] + "+" + key_list[-1]
     worksheet3.write("B11", strTemp)
 
-    worksheet3.write("C13", "Ventana", bold)
-    worksheet3.write("D13", "Titulo de Ventana", bold)
-    worksheet3.write("E13", "Tecla presionada", bold)
-    worksheet3.write("F13", "Tipo de Evento", bold)
+    worksheet3.merge_range("A13:D13", "Teclas resumen total", myformat)
+    worksheet3.write("A14", "Ventana", bold)
+    worksheet3.write("B14", "Titulo de Ventana", bold)
+    worksheet3.write("C14", "Tecla presionada", bold)
+    worksheet3.write("D14", "Tipo de Evento", bold)
 
     all_pressed_keys = li.get_all_pressed_keys()
-    up = 0
+
+    all_keys = []
     for x in range(0, all_pressed_keys.__len__()):
         line = all_pressed_keys[x]
         keystroke, event_type, window, window_title = line
         #print window, ":\t", window_title, "\t", event_type, "\t", keystroke
-        if event_type == "down":
-            worksheet3.write("C" + str(14 + x - up), window)
-            worksheet3.write("D" + str(14 + x - up), window_title)
-            worksheet3.write("E" + str(14 + x - up), keystroke)
-            worksheet3.write("F" + str(14 + x - up), event_type)
+        if window.__contains__(".exe"):
+            worksheet3.write("A" + str(15 + x), generate_key_name(window))
+            all_keys.append([generate_key_name(window), window_title, keystroke, event_type])
         else:
-            up += 1
+            worksheet3.write("A" + str(15 + x), window)
+            all_keys.append([window, window_title, keystroke, event_type])
+        worksheet3.write("B" + str(15 + x), window_title)
+        worksheet3.write("C" + str(15 + x), keystroke)
+        worksheet3.write("D" + str(15 + x), event_type)
+
+        """
+        up=0
+        if event_type == "down":
+            if window.__contains__(".exe"):
+                worksheet3.write("A" + str(15 + x - up), generate_key_name(window))
+                keys_per_down.append([generate_key_name(window), window_title, keystroke])
+            else:
+                worksheet3.write("A" + str(15 + x - up), window)
+                keys_per_down.append([window, window_title, keystroke])
+            worksheet3.write("B" + str(15 + x - up), window_title)
+            worksheet3.write("C" + str(15 + x - up), keystroke)
+            worksheet3.write("D" + str(15 + x - up), event_type)
+        else:
+            up += 1"""
+
+    generate_words_reconstruction(all_keys, workbook, addname)
 
 
 def generate_separate_data():
@@ -379,10 +518,11 @@ def generate_resources_plot(workbook, worksheet, users, resourcesamount):
     worksheet.insert_chart(22, usersamount+6, chart)
 
 
+# Funtion that eleminate exe extension
 def generate_key_name(key):
     key_name = ""
     indice = key.__len__()-5
-    while(indice!=0):
+    while( indice != 0):
         if key[indice] == "\\":
             break
         else:
@@ -422,6 +562,7 @@ def generate_full_data():
         li = listLogInfo[i]
 
         keys = li.get_time_by_active_window().keys()
+
         t = 0
         for j in range(0, keys.__len__()):
             key = keys[j]
@@ -431,8 +572,12 @@ def generate_full_data():
                 ind1 = "B" + str(j + (init+1) - t)
                 if key.__contains__(".exe"):
                     worksheet.write(ind1, generate_key_name(key))
+                else:
+                    worksheet.write(ind1, key)
+
                 ind2 = "C" + str(j + (init+1) - t)
                 worksheet.write(ind2, li.get_time_by_active_window()[key])
+
                 if not resources.__contains__(key):
                     resources.append(key)
 
@@ -451,12 +596,14 @@ def generate_full_data():
         ind1 = "B" + str(j + (init+1))
         worksheet.write(ind1, "total")
         ind2 = "C" + str(j + (init+1))
+
         worksheet.write(ind2, li.get_time_by_active_window()["total"])
 
         indtotals[0].append(logname[1])
         indtotals[1].append(li.get_time_by_active_window()["total"])
 
         actual_user = logname[1] + "_" + logname[2]
+
         generate_click_info(li, workbook, actual_user)
         generate_key_info(li, workbook, actual_user)
 
@@ -511,92 +658,18 @@ def generate_full_data():
     print "Excel file writed"
 
 
-def print_data():
-
-    for i in range(0, listLogInfo.__len__()):
-        li = listLogInfo[i]
-        #print "------------------------------"
-        #in a new workshet
-        # Print clicks summary info.
-        #print "Unique pressed clicks:", li.get_unique_pressed_clicks() !!!
-        """print
-        print "In-order pressed clicks:"
-        all_pressed_clicks = li.get_all_pressed_clicks()
-        for pressed_click in all_pressed_clicks:
-            print pressed_click"""
-        #print
-        # print "Click info:",li.get_click_info() see opta por no poner informacion
-        #print "+++++++++++++++++++++"
-        #li.print_click_summary()
-
-        print "------------------------------"
-        # Print keys summary info.
-        #print "Unique pressed keys:", li.get_unique_pressed_keys() !!!
-        print
-        #print "In-order pressed keys:"
-        #for f in li.get_all_pressed_keys():
-        #    keystroke, event_type, window, window_title = f
-        #    print window, ":\t", window_title, "\t", event_type, "\t", keystroke
-
-        print "+++++++++++++++++++++="
-        #for f in li.get_letter_info():  se opta por no poner informacion por el momento
-        #    print f
-        print "+++++++++++++++++++++="
-        #li.print_key_summary()
-
-        print "------------------------------"
-        """
-        # Get the time spent in each window.
-        print "Time spent in:"
-        times_by_window = li.get_time_by_active_window()
-        for k in times_by_window:
-            print "\t * '%s' = %s ms" % (k, times_by_window[k])
-    """
-    # Plots the keystroke progression graph.
-    # li.plot_keystroke_progression_graph(1)
-
-    # Plots the clicks progression graph.
-    # li.plot_clicks_progression_graph(1)
-
-    # Print pauses in interval [0, 5000000]
-    # li.print_pauses(0, 5000000)
-    # li.print_pause_summary(0, 5000000)
+def main():
+    load_loginfo()
+    # total_session_time()
+    # print_data()
+    # generate_separate_data()
+    generate_full_data()
+    # write_excel()
+    # generate_total_plot()
 
 
-def write_excel():
-    # Create an new Excel file and add a worksheet.
-    workbook = xlsxwriter.Workbook('myexcel.xlsx')
-    worksheet = workbook.add_worksheet("mysheet")
-
-    # Widen the first column to make the text clearer.
-    worksheet.set_column('A:A', 20)
-
-    # Add a bold format to use to highlight cells.e
-    bold = workbook.add_format({'bold': True})
-
-    # Write some simple text.
-    worksheet.write('A1', 'Hello')
-
-    # Text with formatting.
-    worksheet.write('A2', 'World', bold)
-
-    # Write some numbers, with row/column notation.
-    worksheet.write(2, 0, 123)
-    worksheet.write(3, 0, 123.456)
-
-    # Insert an image.
-    worksheet.insert_image('C6', 'logo.png')
-
-    workbook.close()
-    print("Excel file writed")
+if __name__ == "__main__":
+    main()
 
 
-load_loginfo()
-#total_session_time()
-#print_data()
-#generate_separate_data()
-generate_full_data()
-#write_excel()
-#generate_total_plot()
-#print generate_key_name("C:\Program Files (x86)\Google\Chrome\Application\chrome.exe")
 
