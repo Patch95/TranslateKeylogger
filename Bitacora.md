@@ -801,3 +801,32 @@ ona
     - Se hablo de nuestro desempeño
  - Debido a que el compañero Randall Araya estaba de cumpleaños se nos otorgo el día y no se trabajó en el proyecto.
  
+ # Fecha 26 de Marzo del 2018
+ 
+ ### Requerimientos:
+ 
+ - R
+ 
+ ### Informa de Trabajo
+ 
+ - S
+ 
+ # Fecha 27 de Marzo del 2018
+ 
+ ### Requerimientos:
+ 
+ - R
+ 
+ ### Informa de Trabajo
+ 
+ - S
+ 
+ # Fecha 28 de Marzo del 2018
+ 
+ ### Requerimientos:
+ 
+ - R
+ 
+ ### Informa de Trabajo
+ 
+ - S
