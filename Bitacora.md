@@ -763,7 +763,7 @@ ona
     - Nuevos supuestos:
         - Debido al nombre que le randall araya le otorgó al script de python es necesario dar un formato de nombre para el script que realizaran los estudiantes.
         - Debe guardarse el script antes de realizar la programación
- - Una vez que se generó el piloto se procedió a aplicar el script logs_interpreter.py a los dos logs generados
+ - Una vez que se generó el piloto se procedió a aplicar el script logs_interpreter.py a los dos logs generados, el escript falla.
  
 
  # Fecha 22 de Marzo del 2018
@@ -779,17 +779,25 @@ ona
     - No se contemplo que en windows las teclas del sistema se les asigna sys como identificador lo cual genera la interrupción de la siguiente manera key sys down key sys up
     - Se creia que la asignación de tiempo erroneos solo se daba en los eventos de tipo "up" pero tambien se dio en los eventos de tipo "down"
  - Una vez que se corrigieron esto errores el script logs_intepreter.py genero la información de ambos estudiantes.
- - Se filtro la información para obtener el numero de compilaciones que realiza un estudiante ver [supuestos](Supuestos del piloto:)
+ - Se filtro la información para obtener el numero de compilaciones que realiza un estudiante.
+    - Dicha información no se agregó al archivo excel ya que se espera primero confirmación de Paula Estrella.
+ 
  
  # Fecha 23 de Marzo del 2018
  
  ### Requerimientos:
-  
-- Reunión con tutora de proyecto Costa Rica
+ 
+ - Reunión con tutora de proyecto Argentina
+ - Reunión con tutora de proyecto Costa Rica
  
  ### Informa de Trabajo
  
-- Se llevó a cabbo una reunión con Aurelio Sanabria:
+ - Se llevó a cabbo una reunión con Paula estrella:
+    - Se mostro el archivo que se generó a partir del pilot.
+    - Se comento los errores encontrados y la corrección de estos.
+    - Se mecionó que se genero el numero de compilaciones de los estudiantes con el supuesto de que solo pueden compilar conb F5, se accedió a agregarlo al archivo excel, se toma como indentificardor necesario para la investigación.
+    - Se comento del cruce entre la investigacióin de Jose Arguedas y mi investigación, se concluye que tomemos la mejor desición para no influir en el desarrollo del otro investigador, debe estudiarse.
+ - Se llevó a cabbo una reunión con Aurelio Sanabria:
     - Se hablo de nuestro desempeño
-- Debido a que el compañero Randall Araya estaba de cumpleaños se nos otorgo el día y no se trabajó en el proyecto.
+ - Debido a que el compañero Randall Araya estaba de cumpleaños se nos otorgo el día y no se trabajó en el proyecto.
  
