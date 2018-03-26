@@ -655,9 +655,7 @@ ona
     - Se encarga de imprimir generar y imprimir en el excel los keys iniciales y el texto reconxtruido.
     - Se realizó la impresión del los keys sin modificar.
      
-   
- 
- 
+      
  # Fecha 14 de Marzo del 2018
  
  ### Requerimientos:
@@ -691,6 +689,7 @@ ona
     - En caso de querer realizar una consulta en web SE PUEDE UTILIZAR SOLO google chrome.
     - Se tiene que utilizar el idle de python.
     - Antes de inicializar el researchlogger se debe haber guardado el archivo con el nombre del estudiante walter.py en este caso.
+    - Solamente se puede compilar con F5
  - Se realizó el piloto con exito
  - Se tomó la carpeta generada y se intento realizar el excel con dicha información
  - Se generó el siguiente erro
@@ -703,12 +702,94 @@ ona
  
  ### Requerimientos:
   
-- Reunión con tutora de proyecto Argentina
+ - Reunión con tutora de proyecto Argentina
  
  ### Informa de Trabajo
  
  - Se mostró la reconstrucción parcial del texto, que está separado por recurso utilizado.
  - Se expuso el error encontrado con la realización del log, el cual debe ser visto en una reunión presencial.
  - También se concluye realizar el mismo piloto en un live cd de ubuntu y en una maquina que tenga como sistema operativo windows 7.
+ 
+ # Fecha 19 de Marzo del 2018
+ 
+ ### Requerimientos:
+  
+ - Chequeo de error de creación de logs
+ 
+ ### Informa de Trabajo
+ 
+ - Se trabajó durante el día en el mapeo del error del log en el momento de ser generado:
+    - Se concluye que el log no se genera correctamente debido a la maquina virtual
+    - El script Key_parser.py no genera la informacion correctamente apartir del log creado
+    - Aún se desconoce si es posible cambiar el log para que la información si se leida
+    - Se necesita hablar con paula estrella de manera presencial
+ 
+# Fecha 20 de Marzo del 2018
+ 
+ ### Requerimientos:
+  
+- Reunión con tutora de proyecto Argentina
+ 
+ ### Informa de Trabajo
+ 
+ - Se llevó a cabbo una reunión con Paula estrella:
+    - Se reviso el error del log generado en conjunto con paula
+    - Se concluye que los tiempos de la maquina virtual no se generan correctamente
+    - Se necesita agregar al scriptcheker un chequeo de los tiempos que se generan en el logs
+ - Se genero un chequeo de los tiempos del log, por cada tecla q se suelta "up" se chequeo que no se repita el mismo milisegundo
+ 
+ # Fecha 21 de Marzo del 2018
+ 
+ ### Requerimientos:
+  
+- Realizar Piloto
+ 
+ ### Informa de Trabajo
+ 
+ - Se necesita realizar el piloto de programación con los estudiantes avanzados Jose Roberto Arguedas y Randall araya.
+ - Ejercicios seleccionados para posible piloto
+    - http://coj.uci.cu/24h/problem.xhtml?pid=2815
+    - http://coj.uci.cu/24h/problem.xhtml?pid=2858
+ - Se generó un piloto con los estudiantes Randall Araya y Jose Arguedas
+    - El ejercicio que se realizó fue "Easy String Problem" http://coj.uci.cu/24h/problem.xhtml?pid=2815.
+    - Retroalimentación Randall Araya:
+        - Se sugiere cambiar la definición del problema agregar más descripción de la que se encuentra en el link de coj
+        - Se sugiere tambien generar un archivo de entrada para prueba del estudiante que realice el piloto
+        - Se sugiere agregar numero de compilaciones a la información generada a partir de el logs?interpreter.py
+    - Retroalimentación Jose Arguedas
+        - Se sugiere cambiar la definición del problema agregar más descripción de la que se encuentra en el link de coj
+        - Se sugiere tambien generar un archivo de entrada para prueba del estudiante que realice el piloto
+        - El estudiante utiliza teclas especiales para moverse entre ventanas, no utiliza el mouse por lo que es necesario considerar esto.
+    - Nuevos supuestos:
+        - Debido al nombre que le randall araya le otorgó al script de python es necesario dar un formato de nombre para el script que realizaran los estudiantes.
+        - Debe guardarse el script antes de realizar la programación
+ - Una vez que se generó el piloto se procedió a aplicar el script logs_interpreter.py a los dos logs generados
+ 
 
-    
+ # Fecha 22 de Marzo del 2018
+ 
+ ### Requerimientos:
+  
+- Corrección de fallos encontrados en el piloto
+ 
+ ### Informa de Trabajo
+ 
+ - Inicialmente fallo al realizar la información, a partir de la investigación del error se concluye que:
+    - No se contemplo el click derecho del maouse en la correcciones preliminares del log
+    - No se contemplo que en windows las teclas del sistema se les asigna sys como identificador lo cual genera la interrupción de la siguiente manera key sys down key sys up
+    - Se creia que la asignación de tiempo erroneos solo se daba en los eventos de tipo "up" pero tambien se dio en los eventos de tipo "down"
+ - Una vez que se corrigieron esto errores el script logs_intepreter.py genero la información de ambos estudiantes.
+ - Se filtro la información para obtener el numero de compilaciones que realiza un estudiante ver [supuestos](Supuestos del piloto:)
+ 
+ # Fecha 23 de Marzo del 2018
+ 
+ ### Requerimientos:
+  
+- Reunión con tutora de proyecto Costa Rica
+ 
+ ### Informa de Trabajo
+ 
+- Se llevó a cabbo una reunión con Aurelio Sanabria:
+    - Se hablo de nuestro desempeño
+- Debido a que el compañero Randall Araya estaba de cumpleaños se nos otorgo el día y no se trabajó en el proyecto.
+ 
