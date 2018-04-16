@@ -252,6 +252,7 @@ class LogInfo:
         keywds = []
         for key_struct in self.keys_parser.keys:
             date, time, pn, user, wid, title, ms, key, msg, x, y = key_struct
+            #print date, time, pn, user, wid, title, ms, key, msg, x, y
             keywds += [ms]
             kd[ms] = key_struct
         pk = {}
@@ -270,7 +271,7 @@ class LogInfo:
             else:  # It's an UP msg
                 if key not in pk:
                     msg = "Ha ocurrido un error fatal. "
-                    msg += "El log no tiene el formato deseado."
+                    msg += "El log keys no tiene el formato deseado."
                     print msg
                     exit(1)
                 else:
@@ -310,6 +311,7 @@ class LogInfo:
         """
         Prints a complete summary on the key log file.
         """
+
         key_amount = 0
         function_keys = set([])
         move_keys = set([])
@@ -318,6 +320,7 @@ class LogInfo:
         windows = set([])
         for k in self.keys_parser.keys:
             date, time, pn, user, wid, title, ms, key, msg, x, y = k
+            #print date, time, pn, user, wid, title, ms, key, msg, x, y
             if msg == "key_down":
                 key_amount += 1
             windows.add(pn)
@@ -329,8 +332,10 @@ class LogInfo:
                 move_keys.add(key)
         esp = 0
         var = 0
+
         for k in self.get_letter_info():
             key, dt, ut, tt, dx, dy, ux, uy = k
+            #print key, dt, ut, tt, dx, dy, ux, uy
             esp += tt
             var += tt * tt
         esp = esp / float(key_amount)

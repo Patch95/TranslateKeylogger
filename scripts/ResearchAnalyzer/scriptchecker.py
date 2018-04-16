@@ -2,12 +2,53 @@
 import adminfile
 
 
+# Function that check the times are all different
+def check_times(detailed_log_path):
+    f = open(detailed_log_path, 'r')
+    line = f.readline()
+    keysfile_adds = ""
+    check_list = []
+    while line != '':
+        # Get attributes from the log line.
+        date, time, program_name, window_id, username, window_title, logged_keys = line.split("|")
+        keysfile_adds += date + "|" + time + "|" + program_name + "|" + window_id + "|" + username + "|" + window_title + "|"
+
+        logged_keys = logged_keys.split(" ")
+
+        ms, key, msg, x, y = logged_keys[0].split(",")
+        if check_list.__len__() != 0 and check_list.__contains__(ms):
+            keysfile_adds += str(int(ms) + 1) + "," + key + "," + msg + "," + x + "," + y
+            check_list.append(str(int(ms) + 1))
+        else:
+            keysfile_adds += logged_keys[0]
+            check_list.append(ms)
+
+        for i in range(1, logged_keys.__len__()):  # It is taken as tautology that always starts with a down
+            logged_key = logged_keys[i]
+            # print logged_key
+            if logged_key == "\n":
+                keysfile_adds += "\n"
+            else:
+                ms, key, msg, x, y = logged_key.split(",")
+                if check_list.__contains__(ms):
+                    keysfile_adds += " " + str(int(ms) + 1) + "," + key + "," + msg + "," + x + "," + y
+                    check_list.append(str(int(ms) + 1))
+                else:
+                    keysfile_adds += " " + ms + "," + key + "," + msg + "," + x + "," + y
+                    check_list.append(ms)
+
+        line = f.readline()
+
+    adminfile.writefile(detailed_log_path, keysfile_adds)
+
+
 def arranger(detailed_log_path, click_images_log_path):
 
-    #keyspath = '.\logs_to_treat\logs-USER-1518205759\detailed_log\detailedlogfile_USER.txt'
     keysfile = adminfile.readfile(detailed_log_path)
     keysfile = keysfile.replace("key down", "key_down,-1,-1")
     keysfile = keysfile.replace("key up", "key_up,-1,-1")
+    keysfile = keysfile.replace("key sys down", "key_down,-1,-1")
+    keysfile = keysfile.replace("key sys up", "key_up,-1,-1")
     keysfile = keysfile.replace("Lcontrol", "ctrll")
     keysfile = keysfile.replace("Rcontrol", "ctrlr")
     keysfile = keysfile.replace("Left", "leftarrow")
@@ -16,9 +57,10 @@ def arranger(detailed_log_path, click_images_log_path):
     keysfile = keysfile.replace("Down", "downarrow")
     keysfile = keysfile.replace("Back", "backspace")
     keysfile = keysfile.replace("Delete", "supr")
-    keysfile = keysfile.replace("Capital", "'mayus'")
-
-
+    keysfile = keysfile.replace("Capital", "mayus")
+    keysfile = keysfile.replace("Oem_Comma", "comma")
+    keysfile = keysfile.replace("Oem_Period", "period")
+    keysfile = keysfile.replace("Oem_Plus", "plus")
 
     pipe = 0
     comma = 0
@@ -48,9 +90,15 @@ def arranger(detailed_log_path, click_images_log_path):
     detailed_log_path = detailed_log_path.replace(".txt", "_new.txt")
     adminfile.writefile(detailed_log_path, keysfile_adds)
 
+    check_times(detailed_log_path)
+
     clicksfile = adminfile.readfile(click_images_log_path)
     clicksfile = clicksfile.replace("mouse left up", "left_up")
     clicksfile = clicksfile.replace("mouse left down", "left_down")
+    clicksfile = clicksfile.replace("mouse right up", "left_up")
+    clicksfile = clicksfile.replace("mouse right down", "left_down")
+    clicksfile = clicksfile.replace("mouse middle down", "middle_down")
+    clicksfile = clicksfile.replace("mouse middle up", "middle_up")
 
     pipe = 0
     comma = 0
@@ -95,12 +143,3 @@ def arranger(detailed_log_path, click_images_log_path):
 
     click_images_log_path = click_images_log_path.replace(".txt", "_new.txt")
     adminfile.writefile(click_images_log_path, clicksfile_adds)
-    #print(clicksfile)
-
-
-"""def main():
-    arranger("w", ".\logs_to_treat\logs-USER-1518205759\click_images\clickimagelogfile_USER.txt")
-
-
-if __name__ == "__main__":
-    main()"""
